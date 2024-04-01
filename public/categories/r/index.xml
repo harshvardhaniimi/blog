@@ -1,22 +1,227 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>R on Archie</title>
+    <title>R on Harsh&#39;s Corner</title>
     <link>/categories/r/</link>
-    <description>Recent content in R on Archie</description>
+    <description>Recent content in R on Harsh&#39;s Corner</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© Athul</copyright>
-    <lastBuildDate>Tue, 01 Dec 2020 21:13:14 -0500</lastBuildDate><atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© Harshvardhan</copyright>
+    <lastBuildDate>Sat, 20 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="/categories/r/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello R Markdown</title>
-      <link>/posts/2020-12-01-r-rmarkdown/</link>
-      <pubDate>Tue, 01 Dec 2020 21:13:14 -0500</pubDate>
+      <title>Up Your Blogging Game: Three Enhancements to Hugo Apero</title>
+      <link>/posts/hugo/</link>
+      <pubDate>Sat, 20 May 2023 00:00:00 +0000</pubDate>
       
-      <guid>/posts/2020-12-01-r-rmarkdown/</guid>
-      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.</description>
+      <guid>/posts/hugo/</guid>
+      <description>This post provides a detailed guide to customizing the Hugo Apero template, focusing on changing themes, adding a search bar, and altering fonts for a truly personalized blogging experience.</description>
+    </item>
+    
+    <item>
+      <title>Who are Twitter Blue Users?</title>
+      <link>/posts/twitter-blue/</link>
+      <pubDate>Sat, 01 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/twitter-blue/</guid>
+      <description>In this blog post, I explore who are the Twitter Blue subscribers. It is not celebrities, businesses or governments. It is our regular old Joe with fewer than a hundred followers.</description>
+    </item>
+    
+    <item>
+      <title>From Bits to Words: A Tale Computing and Communication Languages</title>
+      <link>/posts/languages/</link>
+      <pubDate>Wed, 08 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/languages/</guid>
+      <description>A ten-year-old kid was beginning his high school journey when he had to learn a third language. He was already learning two languages: his mother tongue Hindi and the common-speak English. But neither of them had prepared him for Sanskrit.</description>
+    </item>
+    
+    <item>
+      <title>Moving Next from Revue to Substack</title>
+      <link>/posts/substack/</link>
+      <pubDate>Fri, 30 Dec 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/substack/</guid>
+      <description>Twitter is shutting down Revue, the newsletter platform that I use for Next. Thus, I’m migrating to Substack. You shouldn’t need to do anything on your side.</description>
+    </item>
+    
+    <item>
+      <title>Script monkey! 🐒</title>
+      <link>/posts/script-monkey/</link>
+      <pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/script-monkey/</guid>
+      <description>Use a Script Monkey in your codebase at all locations where you need to change things manually. All that involves is writing an extra comment saying &amp;lsquo;Script Monkey&amp;rsquo;. Later on, search for all monkeys in the script and make the changes. Simple.</description>
+    </item>
+    
+    <item>
+      <title>The Ascribed Advantage</title>
+      <link>/posts/the-ascribed-advantage/</link>
+      <pubDate>Sat, 09 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/the-ascribed-advantage/</guid>
+      <description>How does gender affects pay? In this short exploration, I use #tidytuesday dataset provided by UK Government to visualise gender gaps using R. And why are women working at churches paid 40% less bonus than men?</description>
+    </item>
+    
+    <item>
+      <title>Street Maps (of Some Cities)</title>
+      <link>/posts/city-maps/</link>
+      <pubDate>Sat, 28 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/city-maps/</guid>
+      <description>Over the last few days, I dabbled with maps in R. Two days ago, I made a map of all the cities I&amp;rsquo;ve visited. Today, I thought to make street maps of some of them (and other cool cities).</description>
+    </item>
+    
+    <item>
+      <title>Billionaires and Taxes</title>
+      <link>/posts/billionaires-and-taxes/</link>
+      <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/billionaires-and-taxes/</guid>
+      <description>How much do the super rich really pay? Until now, the answer was unknown &amp;mdash; thanks to privacy laws. Recently, tax returns of the super rich was leaked to &lt;a href=&#34;https://projects.propublica.org/americas-highest-incomes-and-taxes-revealed/&#34;&gt;ProPublica&lt;/a&gt;. I thought of exploring the billionaires and their tax rates.</description>
+    </item>
+    
+    <item>
+      <title>Creating your own short URLs with blogdown</title>
+      <link>/posts/creating-your-own-short-urls-with-blogdown/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/creating-your-own-short-urls-with-blogdown/</guid>
+      <description>Here&amp;rsquo;s how to make your short URLs using Hugo + Blogdown</description>
+    </item>
+    
+    <item>
+      <title>Let’s say you’re copying a folder to a folder</title>
+      <link>/posts/lets-say-you-re-copying-a-folder-to-a-folder/</link>
+      <pubDate>Thu, 10 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/lets-say-you-re-copying-a-folder-to-a-folder/</guid>
+      <description>What should the progress bar show? How to measure 10% work done?</description>
+    </item>
+    
+    <item>
+      <title>Number of PhDs by Field</title>
+      <link>/posts/number-of-phds/</link>
+      <pubDate>Sun, 20 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/number-of-phds/</guid>
+      <description>An Incomplete Data Exploration</description>
+    </item>
+    
+    <item>
+      <title>Classification: Logistic Regression and Random Forest</title>
+      <link>/posts/classification-logistic-regression-and-random-forest/</link>
+      <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/classification-logistic-regression-and-random-forest/</guid>
+      <description>Using Tidymodels to Find Sex of Penguins</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression and Optimisation</title>
+      <link>/posts/using-linear-regression-to-find-optimal-value/</link>
+      <pubDate>Fri, 11 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/using-linear-regression-to-find-optimal-value/</guid>
+      <description>Using linear regression to find the optimal value of an input</description>
+    </item>
+    
+    <item>
+      <title>Notes on R</title>
+      <link>/posts/notes-on-r/</link>
+      <pubDate>Thu, 03 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/notes-on-r/</guid>
+      <description>Functions et al</description>
+    </item>
+    
+    <item>
+      <title>Basics of Text Mining in R</title>
+      <link>/posts/basics-of-text-mining-in-r/</link>
+      <pubDate>Thu, 27 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/basics-of-text-mining-in-r/</guid>
+      <description>Thinking of Text as List of Words</description>
+    </item>
+    
+    <item>
+      <title>Notes on Github</title>
+      <link>/posts/notes-on-github/</link>
+      <pubDate>Mon, 24 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/notes-on-github/</guid>
+      <description>Tricks of trade I learnt along the way</description>
+    </item>
+    
+    <item>
+      <title>Stackoverflow Answers</title>
+      <link>/posts/stackoverflow-answers/</link>
+      <pubDate>Fri, 14 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/stackoverflow-answers/</guid>
+      <description>A collection of my answers on Stackoverflow</description>
+    </item>
+    
+    <item>
+      <title>How fast is M1?</title>
+      <link>/posts/how-fast-is-m1/</link>
+      <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/how-fast-is-m1/</guid>
+      <description>Comparing Apple M1 processor with Other Systems in R</description>
+    </item>
+    
+    <item>
+      <title>Ellsberg&#39;s Paradox</title>
+      <link>/posts/ellsberg-paradox/</link>
+      <pubDate>Sun, 11 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/ellsberg-paradox/</guid>
+      <description>Simulation of Ellsberg&amp;rsquo;s Paradox</description>
+    </item>
+    
+    <item>
+      <title>Yihui on Blogging and Writing Books</title>
+      <link>/posts/yihui-on-blogging-and-writing-books/</link>
+      <pubDate>Mon, 05 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/yihui-on-blogging-and-writing-books/</guid>
+      <description>Attending My First Academic Conference</description>
+    </item>
+    
+    <item>
+      <title>Is COVID-19 Data tampered?</title>
+      <link>/posts/2021-02-15-is-covid-19-data-tampered/</link>
+      <pubDate>Mon, 15 Feb 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2021-02-15-is-covid-19-data-tampered/</guid>
+      <description>Is there any evidence of tampering or manipulation in COVID-19 daily cases reported by countries? Using Benford analysis in R, I try to reach at some conclusion.</description>
+    </item>
+    
+    <item>
+      <title>Forecasting Malaria Vaccine Demand</title>
+      <link>/posts/2020-12-24-forecasting-malaria-vaccine-demand/</link>
+      <pubDate>Thu, 24 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2020-12-24-forecasting-malaria-vaccine-demand/</guid>
+      <description>Summary of my research work on forecasting coverage for Malaria vaccines</description>
+    </item>
+    
+    <item>
+      <title>Sentiment Analysis of Tweets</title>
+      <link>/posts/twitter-sentiments/</link>
+      <pubDate>Wed, 10 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/twitter-sentiments/</guid>
+      <description>Using rTweet package in R to analyse live tweets from Twitter</description>
+    </item>
+    
+    <item>
+      <title>Exploring My Spotify Listening</title>
+      <link>/posts/2020-06-03-exploring-my-spotify-listening/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2020-06-03-exploring-my-spotify-listening/</guid>
+      <description>I analyse my listening stats and patterns using R.</description>
     </item>
     
   </channel>
