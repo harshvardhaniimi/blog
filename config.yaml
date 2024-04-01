@@ -1,0 +1,49 @@
+baseURL: "/blog.harsh17.in/"
+languageCode: en-us
+title: Harsh's Corner
+theme: archie
+copyright: © Harshvardhan
+pygmentsstyle: monokai
+pygmentscodefences: yes
+pygmentscodefencesguesssyntax: yes
+ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
+ignoreErrors: ["error-missing-instagram-accesstoken"]
+params:
+  mode: toggle
+  social:
+    - icon: linkedin
+      name: LinkedIn
+      url: https://www.linkedin.com/in/harshvardhaniimi/
+    - icon: github
+      name: GitHub
+      url: https://github.com/harshvardhaniimi
+    - icon: twitter
+      name: Twitter
+      url: https://twitter.com/harshbutjust
+    - icon: instagram
+      name: Instagram
+      url: https://www.instagram.com/harsh17/
+    - icon: rss
+      name: RSS
+      url: /index.xml
+  subtitle: "I usually pen down my thoughts here drawing heavily from anecdotes and personal experiences."
+  useCDN: no
+menu:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: All posts
+      url: /posts
+      weight: 2
+    # - name: About
+    #   url: /about
+    #   weight: 3
+    - name: Tags
+      url: /tags
+      weight: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
