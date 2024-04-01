@@ -99,12 +99,30 @@
     </item>
     
     <item>
+      <title>Spotify Randomizer</title>
+      <link>/posts/spotify-randomizer/</link>
+      <pubDate>Sat, 26 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/spotify-randomizer/</guid>
+      <description>A new playlist of random songs that I haven&amp;rsquo;t listened in a while generated automatically every Monday</description>
+    </item>
+    
+    <item>
       <title>HP Internship: A Year and a Half in the Fast Lane</title>
       <link>/posts/hp-blog-2023/</link>
       <pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate>
       
       <guid>/posts/hp-blog-2023/</guid>
       <description>During my 15-month internship at HP Inc., I dove into machine learning forecasting, tackling challenges from SKU-level predictions to data management. Collaborating with the SPaM team, utilizing innovative tools, and embracing HP&amp;rsquo;s culture of innovation and failure, I emerged with invaluable skills, insights, and memories.</description>
+    </item>
+    
+    <item>
+      <title>ML Forecasting at HP Inc.</title>
+      <link>/posts/hp23/</link>
+      <pubDate>Mon, 21 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hp23/</guid>
+      <description>Creating ML demand forecast for print products at HP Inc. using LightGBM and pushing it to production for wide adoption.</description>
     </item>
     
     <item>
@@ -132,6 +150,15 @@
       
       <guid>/posts/seattle/</guid>
       <description>Sometimes, a journey far from home can unexpectedly transport you back to cherished memories. Such was my experience during my two-day sojourn in Seattle, the Emerald City.</description>
+    </item>
+    
+    <item>
+      <title>Predicting Race, Age and Gender from Face: A Small-sample Example with Encoding</title>
+      <link>/posts/predicting-race-age-and-gender-from-face-a-small-sample-example-with-encoding/</link>
+      <pubDate>Sat, 03 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/predicting-race-age-and-gender-from-face-a-small-sample-example-with-encoding/</guid>
+      <description>Predicting race, age and gender of faces using Variational Autoencoders and Convolutional Neural Networks.</description>
     </item>
     
     <item>
@@ -168,6 +195,15 @@
       
       <guid>/posts/gpt/</guid>
       <description>Curious about ChatGPT, the AI chatbot that&amp;rsquo;s making waves? Dive into this article to learn how it generates human-like responses and its many applications. Get insights into both its strengths and limitations, while understanding why it&amp;rsquo;s essential to approach its responses with a critical eye.</description>
+    </item>
+    
+    <item>
+      <title>Crafting Conversations with GPT Personalities in Python</title>
+      <link>/posts/gpt-chatbot/</link>
+      <pubDate>Sun, 09 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/gpt-chatbot/</guid>
+      <description>Building a customizable chatbot that brings unique characters to life</description>
     </item>
     
     <item>
@@ -294,6 +330,15 @@
       
       <guid>/posts/population-collapse/</guid>
       <description>Population collapse is a theory that says if the growth rates continue to decline the way they are decreasing right now, we would reach population zero. It is a stage where the population neither grows, nor declines. That is, the number of births plus in-migrants equals the number of deaths plus out-migrants. While this may sound cheerful, you may not have considered the pitfalls yet.</description>
+    </item>
+    
+    <item>
+      <title>Supply Chain Analytics at HP Inc.</title>
+      <link>/posts/hp22/</link>
+      <pubDate>Mon, 31 Oct 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/hp22/</guid>
+      <description>Forecasting Global Print Demand Using Machine Learning</description>
     </item>
     
     <item>
@@ -442,6 +487,15 @@ I have read many interesting essays. Some of them stuck with me — like fingers
     </item>
     
     <item>
+      <title>Joint Probability-based Dissimilarity Measure for Discrete Variables</title>
+      <link>/posts/joint-probability-based-dissimilarity-measure-for-discrete-variables/</link>
+      <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/joint-probability-based-dissimilarity-measure-for-discrete-variables/</guid>
+      <description>A Simple Method to Calculate Distance between Discrete Variable</description>
+    </item>
+    
+    <item>
       <title>Making Nails</title>
       <link>/posts/making-nails/</link>
       <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
@@ -520,6 +574,24 @@ I have read many interesting essays. Some of them stuck with me — like fingers
       
       <guid>/posts/interesting-problems-and-where-to-find-them/</guid>
       <description>A Casual Interview of Prof Michael Galbreth</description>
+    </item>
+    
+    <item>
+      <title>garlic: Some R Functions I Use Rather Frequently</title>
+      <link>/posts/garlic-some-r-functions-i-use-rather-frequently/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/garlic-some-r-functions-i-use-rather-frequently/</guid>
+      <description>My personal R package for custom functions</description>
+    </item>
+    
+    <item>
+      <title>Titanic: Who Survived The Tragedy?</title>
+      <link>/posts/titanic-who-survived-the-tragegy/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/titanic-who-survived-the-tragegy/</guid>
+      <description>Yet Another Machine Learning Project with Titanic Dataset</description>
     </item>
     
     <item>
@@ -658,6 +730,33 @@ I have read many interesting essays. Some of them stuck with me — like fingers
     </item>
     
     <item>
+      <title>IndiaPIN: R Data Package</title>
+      <link>/posts/indiapin/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/indiapin/</guid>
+      <description>R Package for All India PIN Codes Directory with Latitude and Longitude Details (Updated: December 2021)</description>
+    </item>
+    
+    <item>
+      <title>Urban-Rural Population in 200&#43; Countries</title>
+      <link>/posts/shiny-urca/</link>
+      <pubDate>Thu, 30 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/shiny-urca/</guid>
+      <description>R Shiny app that creates spreadsheet of population levels segregated at district, state, or any other level</description>
+    </item>
+    
+    <item>
+      <title>Optimizing Order Frequency to Minimize Partial Pallet Orders</title>
+      <link>/posts/optimizing-order-frequency-to-minimize-partial-pallet-orders/</link>
+      <pubDate>Fri, 10 Dec 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/optimizing-order-frequency-to-minimize-partial-pallet-orders/</guid>
+      <description>How can a CPG company improve customers&#39; ordering behaviour?</description>
+    </item>
+    
+    <item>
       <title>Improvements in Artificial Intelligence</title>
       <link>/posts/ai/</link>
       <pubDate>Thu, 09 Dec 2021 00:00:00 +0000</pubDate>
@@ -676,12 +775,39 @@ I have read many interesting essays. Some of them stuck with me — like fingers
     </item>
     
     <item>
+      <title>Replicating Tennessee STAR Project</title>
+      <link>/posts/replicating-tennessee-star-project/</link>
+      <pubDate>Mon, 29 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/replicating-tennessee-star-project/</guid>
+      <description>Econometrics Course Project</description>
+    </item>
+    
+    <item>
       <title>How fast is M1?</title>
       <link>/posts/how-fast-is-m1/</link>
       <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>/posts/how-fast-is-m1/</guid>
       <description>Comparing Apple M1 processor with Other Systems in R</description>
+    </item>
+    
+    <item>
+      <title>Next — Today I Learnt About R</title>
+      <link>/posts/next-today-i-learnt-about-r/</link>
+      <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/next-today-i-learnt-about-r/</guid>
+      <description>My Newsletter on R and Data Science</description>
+    </item>
+    
+    <item>
+      <title>Supervised Learning Using Baysian Decision Rule</title>
+      <link>/posts/supervised-learning-using-baysian-decision-rule/</link>
+      <pubDate>Tue, 07 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/supervised-learning-using-baysian-decision-rule/</guid>
+      <description>Python Functions for Bayesian Learning (COSC 522 Project)</description>
     </item>
     
     <item>
@@ -700,6 +826,15 @@ I have read many interesting essays. Some of them stuck with me — like fingers
       
       <guid>/posts/technical-and-casual-writing/</guid>
       <description>My experience of technical and casual writing.</description>
+    </item>
+    
+    <item>
+      <title>Aspect Ratio (Merck Inc.)</title>
+      <link>/posts/aspect-ratio/</link>
+      <pubDate>Thu, 15 Jul 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/aspect-ratio/</guid>
+      <description>My experience of working as an analyst for Merck Inc. at Aspect Ratio, Pune</description>
     </item>
     
     <item>
@@ -748,6 +883,15 @@ I have read many interesting essays. Some of them stuck with me — like fingers
     </item>
     
     <item>
+      <title>Invento Robotics</title>
+      <link>/posts/2021-06-19-invento-robotics/</link>
+      <pubDate>Sat, 19 Jun 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2021-06-19-invento-robotics/</guid>
+      <description>Marketing case study on launch of Mitra — a humanoid robot</description>
+    </item>
+    
+    <item>
       <title>Notes on LaTeX</title>
       <link>/posts/latex/</link>
       <pubDate>Sat, 19 Jun 2021 00:00:00 +0000</pubDate>
@@ -774,6 +918,15 @@ I have read many interesting essays. Some of them stuck with me — like fingers
       
       <guid>/posts/2021-05-30-how-is-government-s-employment-system-broken/</guid>
       <description>My thoughts on why government hiring is broken and needs system-level redesign to improve.</description>
+    </item>
+    
+    <item>
+      <title>Bliss Lifesciences</title>
+      <link>/posts/2021-03-01-bliss-lifesciences/</link>
+      <pubDate>Mon, 01 Mar 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2021-03-01-bliss-lifesciences/</guid>
+      <description>Marketing research live project</description>
     </item>
     
     <item>
@@ -891,6 +1044,15 @@ I have read many interesting essays. Some of them stuck with me — like fingers
       
       <guid>/posts/presentation-on-latex/</guid>
       <description>My workshop on using LaTeX for IIM Indore community</description>
+    </item>
+    
+    <item>
+      <title>Smart Villages Indore</title>
+      <link>/posts/2021-06-19-smart-villages-indore/</link>
+      <pubDate>Tue, 01 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/2021-06-19-smart-villages-indore/</guid>
+      <description>Creating and deploying web-based content for the Government of Madhya Pradesh</description>
     </item>
     
   </channel>

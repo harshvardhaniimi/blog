@@ -74,17 +74,23 @@
     <loc>/posts/what-are-you-optimizing-for/</loc>
     <lastmod>2023-09-30T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/categories/coding/</loc>
+    <lastmod>2023-08-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/spotify-randomizer/</loc>
+    <lastmod>2023-08-26T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/categories/hp/</loc>
     <lastmod>2023-08-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/hp-blog-2023/</loc>
     <lastmod>2023-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/python/</loc>
+    <loc>/posts/hp23/</loc>
     <lastmod>2023-08-21T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>/categories/coding/</loc>
-    <lastmod>2023-08-14T00:00:00+00:00</lastmod>
+    <loc>/categories/python/</loc>
+    <lastmod>2023-08-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/ml/</loc>
     <lastmod>2023-08-14T00:00:00+00:00</lastmod>
@@ -100,6 +106,9 @@
   </url><url>
     <loc>/posts/seattle/</loc>
     <lastmod>2023-06-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/predicting-race-age-and-gender-from-face-a-small-sample-example-with-encoding/</loc>
+    <lastmod>2023-06-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/moab/</loc>
     <lastmod>2023-05-21T00:00:00+00:00</lastmod>
@@ -118,6 +127,9 @@
   </url><url>
     <loc>/categories/publications/</loc>
     <lastmod>2023-04-26T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/gpt-chatbot/</loc>
+    <lastmod>2023-04-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/categories/twitter/</loc>
     <lastmod>2023-04-01T00:00:00+00:00</lastmod>
@@ -170,6 +182,9 @@
     <loc>/posts/population-collapse/</loc>
     <lastmod>2022-11-10T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/posts/hp22/</loc>
+    <lastmod>2022-10-31T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/posts/wise/</loc>
     <lastmod>2022-10-07T00:00:00+00:00</lastmod>
   </url><url>
@@ -221,6 +236,9 @@
     <loc>/posts/harvard-website/</loc>
     <lastmod>2022-05-11T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/posts/joint-probability-based-dissimilarity-measure-for-discrete-variables/</loc>
+    <lastmod>2022-05-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/posts/making-nails/</loc>
     <lastmod>2022-04-22T00:00:00+00:00</lastmod>
   </url><url>
@@ -250,6 +268,15 @@
   </url><url>
     <loc>/posts/interesting-problems-and-where-to-find-them/</loc>
     <lastmod>2022-03-09T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/garlic-some-r-functions-i-use-rather-frequently/</loc>
+    <lastmod>2022-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/categories/publication/</loc>
+    <lastmod>2022-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/titanic-who-survived-the-tragegy/</loc>
+    <lastmod>2022-02-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/number-of-phds/</loc>
     <lastmod>2022-02-20T00:00:00+00:00</lastmod>
@@ -326,14 +353,32 @@
     <loc>/posts/stackoverflow-answers/</loc>
     <lastmod>2022-01-14T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/posts/indiapin/</loc>
+    <lastmod>2022-01-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/shiny-urca/</loc>
+    <lastmod>2021-12-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/optimizing-order-frequency-to-minimize-partial-pallet-orders/</loc>
+    <lastmod>2021-12-10T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/posts/ai/</loc>
     <lastmod>2021-12-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/my-name/</loc>
     <lastmod>2021-12-08T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/posts/replicating-tennessee-star-project/</loc>
+    <lastmod>2021-11-29T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/posts/how-fast-is-m1/</loc>
     <lastmod>2021-11-08T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/next-today-i-learnt-about-r/</loc>
+    <lastmod>2021-10-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/supervised-learning-using-baysian-decision-rule/</loc>
+    <lastmod>2021-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/government/</loc>
     <lastmod>2021-08-01T00:00:00+00:00</lastmod>
@@ -349,6 +394,9 @@
   </url><url>
     <loc>/posts/technical-and-casual-writing/</loc>
     <lastmod>2021-07-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/aspect-ratio/</loc>
+    <lastmod>2021-07-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/posts/ellsberg-paradox/</loc>
     <lastmod>2021-07-11T00:00:00+00:00</lastmod>
@@ -374,6 +422,9 @@
     <loc>/posts/quotes/</loc>
     <lastmod>2021-06-19T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/posts/2021-06-19-invento-robotics/</loc>
+    <lastmod>2021-06-19T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>/posts/latex/</loc>
     <lastmod>2021-06-19T00:00:00+00:00</lastmod>
   </url><url>
@@ -382,6 +433,9 @@
   </url><url>
     <loc>/posts/2021-05-30-how-is-government-s-employment-system-broken/</loc>
     <lastmod>2021-05-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/2021-03-01-bliss-lifesciences/</loc>
+    <lastmod>2021-03-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/covid-19/</loc>
     <lastmod>2021-02-15T00:00:00+00:00</lastmod>
@@ -445,5 +499,8 @@
   </url><url>
     <loc>/posts/presentation-on-latex/</loc>
     <lastmod>2018-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/posts/2021-06-19-smart-villages-indore/</loc>
+    <lastmod>2016-11-01T00:00:00+00:00</lastmod>
   </url>
 </urlset>

@@ -65,9 +65,9 @@ But how much can you plaster a pizza with cheese? It's already dipping. When the
 
 [^7]: Rainey, Clint. "The Mad Cheese Scientists Fighting to Save the Dairy Industry." *Bloomberg.com*, Bloomberg, <https://www.bloomberg.com/news/features/2017-07-19/the-mad-cheese-scientists-fighting-to-save-the-dairy-industry#xj4y7vzkg.>
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-blogdown::shortcode('tweet', '1528823098929053696')
-```
+![](images/cheese.png)
+
+See this [Tweet](https://twitter.com/netflix/status/1528823098929053696) by Netflix for a dramatized clip.
 
 Today, unlike other corners of fast food industry, pizza isn't considered as unhealthy when it actually is. In fact, the US government spends millions to get people to eat more pizza.[^8]
 

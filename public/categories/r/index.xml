@@ -72,6 +72,15 @@
     </item>
     
     <item>
+      <title>Joint Probability-based Dissimilarity Measure for Discrete Variables</title>
+      <link>/posts/joint-probability-based-dissimilarity-measure-for-discrete-variables/</link>
+      <pubDate>Tue, 10 May 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/joint-probability-based-dissimilarity-measure-for-discrete-variables/</guid>
+      <description>A Simple Method to Calculate Distance between Discrete Variable</description>
+    </item>
+    
+    <item>
       <title>Billionaires and Taxes</title>
       <link>/posts/billionaires-and-taxes/</link>
       <pubDate>Thu, 14 Apr 2022 00:00:00 +0000</pubDate>
@@ -96,6 +105,24 @@
       
       <guid>/posts/lets-say-you-re-copying-a-folder-to-a-folder/</guid>
       <description>What should the progress bar show? How to measure 10% work done?</description>
+    </item>
+    
+    <item>
+      <title>garlic: Some R Functions I Use Rather Frequently</title>
+      <link>/posts/garlic-some-r-functions-i-use-rather-frequently/</link>
+      <pubDate>Sat, 05 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/garlic-some-r-functions-i-use-rather-frequently/</guid>
+      <description>My personal R package for custom functions</description>
+    </item>
+    
+    <item>
+      <title>Titanic: Who Survived The Tragedy?</title>
+      <link>/posts/titanic-who-survived-the-tragegy/</link>
+      <pubDate>Tue, 22 Feb 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/titanic-who-survived-the-tragegy/</guid>
+      <description>Yet Another Machine Learning Project with Titanic Dataset</description>
     </item>
     
     <item>
@@ -162,12 +189,39 @@
     </item>
     
     <item>
+      <title>IndiaPIN: R Data Package</title>
+      <link>/posts/indiapin/</link>
+      <pubDate>Tue, 11 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/indiapin/</guid>
+      <description>R Package for All India PIN Codes Directory with Latitude and Longitude Details (Updated: December 2021)</description>
+    </item>
+    
+    <item>
       <title>How fast is M1?</title>
       <link>/posts/how-fast-is-m1/</link>
       <pubDate>Mon, 08 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>/posts/how-fast-is-m1/</guid>
       <description>Comparing Apple M1 processor with Other Systems in R</description>
+    </item>
+    
+    <item>
+      <title>Next — Today I Learnt About R</title>
+      <link>/posts/next-today-i-learnt-about-r/</link>
+      <pubDate>Wed, 06 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/next-today-i-learnt-about-r/</guid>
+      <description>My Newsletter on R and Data Science</description>
+    </item>
+    
+    <item>
+      <title>Supervised Learning Using Baysian Decision Rule</title>
+      <link>/posts/supervised-learning-using-baysian-decision-rule/</link>
+      <pubDate>Tue, 07 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/supervised-learning-using-baysian-decision-rule/</guid>
+      <description>Python Functions for Bayesian Learning (COSC 522 Project)</description>
     </item>
     
     <item>
