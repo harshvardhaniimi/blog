@@ -8,7 +8,8 @@ pygmentscodefences: yes
 pygmentscodefencesguesssyntax: yes
 ignoreFiles: ["\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 ignoreErrors: ["error-missing-instagram-accesstoken"]
-permalinks: ":slug/"
+permalinks: 
+  posts: "/:slug/"
 params:
   mode: toggle
   social:
