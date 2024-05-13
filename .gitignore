@@ -4,3 +4,9 @@
 .Ruserdata
 public
 .DS_Store
+.DS_Store
+assets/.DS_Store
+content/.DS_Store
+content/posts/.DS_Store
+layouts/.DS_Store
+public/.DS_Store
