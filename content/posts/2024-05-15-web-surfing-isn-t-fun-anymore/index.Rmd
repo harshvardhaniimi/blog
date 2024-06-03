@@ -7,63 +7,100 @@ categories:
   - life
   - thoughts
 tags: []
-draft: yes
+draft: no
 ---
 
-![Like many blog posts, this one started with an idea conveyed in a Tweet. A Tweet where I vented how internet has changed so much that the art of exploration --- called surfing because riding on the waves of information --- wasn't as fun anymore.](images/tweet.png)
+![Like many blog posts, this one started with an idea conveyed in a Tweet. A Tweet where I vented how the internet has changed so much that the art of exploration --- called surfing because riding on the waves of information --- wasn't as fun anymore.](images/tweet.png)
 
 There are several reasons why I don't enjoy it as much as the early days of internet but here are a few of my guesses:
 
 ### **Novelty Effect**
 
-First time exploring anything is fun simply due to the lack of knowledge about the subject. When I was faking my date of birth to be over 18 years to sign up for Orkut, was busy downloading random wallpapers from SantaBanta.com, getting Bollywood songs from songs.pk, I was doing things that were novel to me. I experienced excitement and heightened engagement when I encountered something new or unfamiliar. Now, most websites are somewhat familiar and this effect is gone.
+First time exploring anything is fun simply due to the lack of knowledge about the subject.
+When I was faking my date of birth to be over 18 years to sign up for Orkut, was busy downloading random wallpapers from SantaBanta.com (which has degraded to explict images now), getting Bollywood songs from songs.pk, I was doing things that were novel to me.
+I experienced excitement and heightened engagement when I encountered something new or unfamiliar.
+Now, most websites are somewhat familiar and this effect is gone.
 
 ### **Quality of internet is down**
 
-In the old days, I could open a website and browse almost of its content without being asked to create an account, add my credit card, etc. Now, every site asks me to create an account to read on, some even ask my credit card details. Much worse experience.
+In the old days, I could open a website and browse most of its content without being asked to create an account, add my credit card, etc.
+Now, every site asks me to create an account to read on, some even ask credit card details.
+Much worse experience.
 
-The ads used to be on the sides of the pages and popups (which were annoying af). But still, my mind would automatically ignore the ads and focus on the content. Today, I use AdBlockers so this is not much of an issue but when I do use a computer without AdBlocker, I'm surprised to see 2/5 results on Google are Ads, 3/5 "tweets" are ads, 2/5 posts on Reddits are ads.
+The ads used to be on the sides of the pages and popups (which were annoying af).
+But still, my mind would automatically ignore the ads and focus on the content.
+Today, I use AdBlockers so this is not much of an issue but when I do use a computer without AdBlocker, I'm surprised to see 2/5 results on Google are Ads, 3/5 "tweets" are ads, 2/5 posts on Reddit are ads.
 
-How much more money do these capitalists want from me? Isn't a good user experience worth something more than a few \`$$$\`?
+How much more money do these capitalists want from me?
+Isn't a good user experience worth something more than a few \`\$\$\$\`?
 
 ### Social media sucks badly
 
-I've relied too much on Instagram, Twitter and Reddit to keep me updated on what's going on. However, they seem to be full of noisy, useless content, and hardly ever useful things.
+I've relied too much on Instagram, Twitter and Reddit to keep me updated on what's going on.
+However, they seem to be full of noisy, useless content, and hardly ever useful things.
 
 ### **I've relied too much on Google to be my window to the internet**
 
-[Many.](https://dkb.blog/p/google-search-is-dying) [have.](https://twitter.com/mwseibel/status/1477701120319361026) [debated.](https://www.reddit.com/r/google/comments/gvdsu1/entire_google_search_result_pages_are_now_ads/) [what's.](https://aftermath.site/the-internet-is-full-of-ai-dogshit) [wrong.](https://docs.sendwithses.com/random-stuff/the-internet-is-an-seo-landfill) [with.](https://www.theatlantic.com/technology/archive/2017/03/how-the-like-button-ruined-the-internet/519795/?single_page=true) [search.](https://news.ycombinator.com/item?id=29392702)
+[Many.](https://dkb.blog/p/google-search-is-dying)
+[have.](https://twitter.com/mwseibel/status/1477701120319361026)
+[debated.](https://www.reddit.com/r/google/comments/gvdsu1/entire_google_search_result_pages_are_now_ads/)
+[what's.](https://aftermath.site/the-internet-is-full-of-ai-dogshit)
+[wrong.](https://docs.sendwithses.com/random-stuff/the-internet-is-an-seo-landfill)
+[with.](https://www.theatlantic.com/technology/archive/2017/03/how-the-like-button-ruined-the-internet/519795/?single_page=true)
+[search.](https://news.ycombinator.com/item?id=29392702)
 
 [Some](https://www.wheresyoured.at/the-men-who-killed-google/?curius=2922) have even directly called out Prabhakar Raghavan, a computer scientist with management consultancy background, to be the core problem.
 
-There is ample evidence that Google Search isn't what it used to be. I understand search is a hard problem to solve --- constantly avoiding SEO-optimized posts in favour of quality posts --- but these days, I feel Google tries too hard to understand what I'm looking, instead of serving me what I ask.
+There is ample evidence that Google Search isn't what it used to be.
+I understand search is a hard problem to solve --- constantly avoiding SEO-optimized posts in favour of quality posts --- but these days, I feel Google tries too hard to understand what I'm looking, instead of serving me what I ask.
 
 There are several good alternatives to a search engine, but I need to remember to use them:
 
 1.  [**Perplexity**](https://www.perplexity.ai/)**:** A great alternative that presents the answer directly with footnote citations.
 2.  [**Marginalia.nu**](https://search.marginalia.nu/)**:** It shows me sites that I wouldn't have seen otherwise at all. This is the only one that directly aids in exploration. (It also makes me wonder how can a search engine made by a single person be so good?)
 3.  [**Exa.ai**](https://exa.ai/)**:** A search engine that tries to "understand" the context around my keyword. This is what Google circa 2024 wants to be, though I don't think this is a good North Star. However, the cool part of this tool is the ability to refine my search to PDFs, companies, research papers, tweets, and even personal websites.
+4.  [**Gigabrain**](https://thegigabrain.com/)**:** A Reddit search engine that finds answers by searching only Reddit data. Long live "site:reddit.com"!
 
-[Danluu.com](https://danluu.com/seo-spam/) compares search results from Google, Bing, Marginalia, Kagi, Mwmbl, and ChatGPT. A long but interesting read.
+[Danluu.com](https://danluu.com/seo-spam/) compares search results from Google, Bing, Marginalia, Kagi, Mwmbl, and ChatGPT.
+A long but interesting read.
 
 ### Tools have stagnated
 
-I don't think this is a big problem because browsers --- the primary entrance to internet --- have traditionally been terrible. Internet Explorer was slowww, Firefox was geeky, Chrome was heavy on memory and CPU, and none of them had really thought from scratch what a gateway to internet should feel like.
+I don't think this is a big problem because browsers --- the primary entrance to internet --- have traditionally been terrible.
+Internet Explorer was slowww, Firefox was geeky, Chrome was heavy on memory and CPU, and none of them had really thought from scratch what a gateway to internet should feel like.
 
-Google once tried to replace the website thumbnails on start-up page of Chrome to website icons: screenshot of YouTube.com to [YT] logo. As one can expect, the [YT] logo will be more clear due to small screen space the thumbnail/logo gets. The users loved it --- icons were more direct than a website's thumbnail.
+Google once tried to replace the website thumbnails on start-up page of Chrome to website icons: screenshot of YouTube.com to [YT] logo.
+As one can expect, the [YT] logo will be more clear due to small screen space the thumbnail/logo gets.
+The users loved it --- icons were more direct than a website's thumbnail.
 
-However, the number of searches went down almost immediately as people clicked on [YT] logo instead of typing YouTube in Chrome search bar. Google reversed the change as ad revenue is critical to its sustenance. This story showed to me how Google will never make a better tool that doesn't rely on search as the starting point.
+However, the number of searches went down almost immediately as people clicked on [YT] logo instead of typing YouTube in Chrome search bar.
+Google reversed the change as ad revenue is critical to its sustenance.
+This story showed to me how Google will never make a better tool that doesn't rely on search as the starting point.
 
-Alternatives to tooling, I use [Arc](https://arc.net/) today as my primary browser. Arc feels a lot more humane and easy to use.
+Alternatives to tooling, I use [Arc](https://arc.net/) today as my primary browser.
+Arc feels a lot more humane and easy to use.
 
 ### Are.na for Exploration
 
-Are.na <https://www.are.na/explore> is a simple moodboard like site where you can make collections of anything --- media (audio, video, PDF), text (written text or quotes from websites), links, really anything --- and others can include them in their collection if they like. The use cases are so broad that there is an Arena channel called "[How do you describe Are.na at a party?](https://www.are.na/are-na-team/how-do-you-describe-are-na-at-a-party)"
+Are.na <https://www.are.na/explore> is a simple moodboard like site where you can make collections of anything --- media (audio, video, PDF), text (written text or quotes from websites), links, really anything --- and others can include them in their collection if they like.
+The use cases are so broad that there is an Arena channel called "[How do you describe Are.na at a party?](https://www.are.na/are-na-team/how-do-you-describe-are-na-at-a-party)"
 
-There is also [an hour long](https://www.youtube.com/watch?v=eIyP_Kp2AK0) designers' talk on Are.na. I've used it to create collections of ideas that aren't too long to be a blog post, and aren't too personal to stay on my phone. Like there is one for [House of Leaves](https://www.are.na/harsh/house-of-leaves-znrk6csq2u4) book (one book that you must read), for thoughts around [Vipassana](https://www.are.na/harsh/buddha-vipassana), another around [Kohinoor diamond](https://www.are.na/harsh/koh-i-noor-crown-jewel), [AI stuff](https://www.are.na/harsh/ai-hotflp5soh8), [Coffee](https://www.are.na/harsh/coffee-v_mz29lonrc), cool [Hindi/Hindustani/Urdu](https://www.are.na/harsh/hindustani-hindi-urdu-vocab) words, [anti-capitalism](https://www.are.na/harsh/anti-capitalism-and-pro-degrowth) sentiments, [non-fictional news](https://www.are.na/harsh/not-fiction-but-news), [India](https://www.are.na/harsh/india-3tzoerzshfi) 🇮🇳 and more.
+There is also [an hour long](https://www.youtube.com/watch?v=eIyP_Kp2AK0) designers' talk on Are.na.
+I've used it to create collections of ideas that aren't too long to be a blog post, and aren't too personal to stay on my phone.
+Like there is one for [House of Leaves](https://www.are.na/harsh/house-of-leaves-znrk6csq2u4) book (one book that you must read), for thoughts around [Vipassana](https://www.are.na/harsh/buddha-vipassana), another around [Kohinoor diamond](https://www.are.na/harsh/koh-i-noor-crown-jewel), [AI stuff](https://www.are.na/harsh/ai-hotflp5soh8), [Coffee](https://www.are.na/harsh/coffee-v_mz29lonrc), cool [Hindi/Hindustani/Urdu](https://www.are.na/harsh/hindustani-hindi-urdu-vocab) words, [anti-capitalism](https://www.are.na/harsh/anti-capitalism-and-pro-degrowth) sentiments, [non-fictional news](https://www.are.na/harsh/not-fiction-but-news), [India](https://www.are.na/harsh/india-3tzoerzshfi) and more.
 
-I often find myself spending time on their explore page to find interesting content that isn't asking for engagement. It doesn't feel commercial. Its a small group of people creating something useful.
+I often find myself spending time on their explore page to find interesting content that isn't asking for engagement.
+It doesn't feel commercial.
+Its a small group of people creating something useful.
 
-> Life would be miserable if we only spent time in commercial spaces, because not all value can be captured and supported in a commercial context. We all know this, so it is a pity how overfitted and commercialized the internet, our second home, has become.
+> Life would be miserable if we only spent time in commercial spaces, because not all value can be captured and supported in a commercial context.
+> We all know this, so it is a pity how overfitted and commercialized the internet, our second home, has become.
 >
 > --- Frank Chimero, [The Good Room](https://frankchimero.com/blog/2018/the-good-room/)
+
+### What About Future?
+
+Honestly, I don't know.
+As I grow older, I will miss more and more of the tools that existed --- curse of ageing.
+Due to whatever reasons, they will die out as everything is impermanent.
+I wonder what would exist later in the future.
