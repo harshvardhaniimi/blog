@@ -60,6 +60,9 @@ There are several good alternatives to a search engine, but I need to remember t
 2.  [**Marginalia.nu**](https://search.marginalia.nu/)**:** It shows me sites that I wouldn't have seen otherwise at all. This is the only one that directly aids in exploration. (It also makes me wonder how can a search engine made by a single person be so good?)
 3.  [**Exa.ai**](https://exa.ai/)**:** A search engine that tries to "understand" the context around my keyword. This is what Google circa 2024 wants to be, though I don't think this is a good North Star. However, the cool part of this tool is the ability to refine my search to PDFs, companies, research papers, tweets, and even personal websites.
 4.  [**Gigabrain**](https://thegigabrain.com/)**:** A Reddit search engine that finds answers by searching only Reddit data. Long live "site:reddit.com"!
+5.  [**udm14**](https://udm14.com/): When Google launched all the AI features including overviews recently, it also added a neat code for a much cleaner Google, as it used to be earlier. (Hat-tip to Meenal for suggesting these.)
+
+I have hot keys set up in Arc for all of these [site searches](https://support.google.com/chrome/answer/95426?hl=en&co=GENIE.Platform%3DDesktop), which you can do that for most browsers, including Chrome.
 
 [Danluu.com](https://danluu.com/seo-spam/) compares search results from Google, Bing, Marginalia, Kagi, Mwmbl, and ChatGPT.
 A long but interesting read.
