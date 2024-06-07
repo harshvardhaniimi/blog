@@ -8,7 +8,7 @@ categories:
   - thoughts
   - god
 tags: []
-draft: yes
+draft: no
 ---
 
 [Kaj Sotala](https://www.lesswrong.com/posts/mELQFMi9egPn5EAjK/my-attempt-to-explain-looking-insight-meditation-and) writes:
