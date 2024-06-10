@@ -76,17 +76,15 @@ Buddha spoke extensively about the importance of the Mind in [Dhammapada, Chapte
 > If with a pure mind a person speaks or acts, happiness follows him like his never-departing shadow.
 
 He broke down the whole of mind into four parts that I've [written](https://blog.harsh17.in/theory-of-mind/) about before: *Sangya* (Perception), *Smriti* (Memory), *Vedna* (Sensation or Feeling) and *Sanskar* (Mental conditionings).
-*Sangya* includes our sense organs: eyes, ears, nose, tongue, body/skin, and mind.[\^2] *Sangya* perceives the information available in the world (sense-objects) and calls to action *Smriti*.
-*Smriti* is our memory bank.
-It pulls out every single instance that we have related to the perceived sense object and passes both the present information and the historical data about it to *Vedna*.
-*Vedna*, based on both inputs decides if the present input is **pleasant**, **unpleasant**, or **neutral**.
-In either case, it manifests its decisions through physical bodily sensations.
+*Sangya* includes our sense organs: eyes, ears, nose, tongue, body/skin, and mind.[^2]
+*Sangya* perceives the information available in the world (sense-objects) and calls to action *Smriti*. *Smriti* is our memory bank.
+It pulls out every single instance that we have related to the perceived sense object and passes both the present information and the historical data about it to *Vedna*. *Vedna*, based on both inputs decides if the present input is **pleasant**, **unpleasant**, or **neutral**. In either case, it manifests its decisions through physical bodily sensations.
 Finally, *Sanskar* raises up its head and creates a near permanent memory the sensations and the input.
 If the sensations were pleasant, it wants to continue having the input.
 If they were unpleasant, it wants to avoid having it completely.
 
-[2:] Some people have trouble accepting of mind as a sense organ.
-Here mind refers to the sense organ that senses thoughts, like thoughts of fear, anger, love, etc.
+[^2]: Some people have trouble accepting of mind as a sense organ.
+    Here mind refers to the sense organ that senses thoughts, like thoughts of fear, anger, love, etc.
 
 # Observing Breath, Bare Breath, Nothing but The Breath
 
