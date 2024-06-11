@@ -10,13 +10,14 @@ Each moment is a testament to the incredible coincidences that made life possibl
 For more information about me, visit [my website](https://www.harsh17.in/).
 You can contact me via email at [hello\@harsh17.in](mailto:hello@harsh17.in) or through this [contact form](https://forms.gle/mStnf7EtbuEbfHDcA).
 
-I don\'t have a last name.
-Depending on the circumstances, you might see me listed as \"Harsh Vardhan,\" \"Harshvardhan Harshvardhan,\" or \"FNU Harshvardhan.\" [Learn more about my name](https://blog.harsh17.in/my-name/).
+I don't have a last name.
+Depending on the circumstances, you might see me listed as "Harsh Vardhan," "Harshvardhan Harshvardhan," or "FNU Harshvardhan." [Learn more about my name](https://blog.harsh17.in/my-name/).
 
 ## Navigating My blog
 
 You can browse all my writings using the list of [all posts](https://blog.harsh17.in/posts/).
 Alternatively, explore by [topics](https://blog.harsh17.in/tags/).
+See my [adventure activities](https://blog.harsh17.in/adr/).
 
 ## Subscribe to updates!
 
