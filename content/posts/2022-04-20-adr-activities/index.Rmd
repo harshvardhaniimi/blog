@@ -129,6 +129,8 @@ My hikes in India and Europe aren't included.
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | [Arches National Park](https://www.nps.gov/arch/planyourvisit/biking.htm)                                                                                                                          | Moab, Utah                  | 30 miles         | Astonishing views of the arches. Make stops and get an e-bike.                                                                      |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------+
+| [Cades Cove - Biking](https://www.nps.gov/grsm/planyourvisit/cades-cove-vehicle-free-days.htm)                                                                                                     | NC                          | 15-20 miles      | Wednesdays are vehicle-free days in Cades Cove, perfect for biking. If you are lucky, you may see bears too!                        |
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | [Walker Creek Trail](https://www.alltrails.com/trail/us/north-carolina/walker-creek-trail?openai_user_id=01879e4e-a7e1-5e0c-8a17-98cb40ab5c5b&openai_conv_id=4b588a9f-bf98-5e8a-a4cf-149713be306c) | Asheville, NC               | 4.2 miles        | Good hike, not a major waterfall. Natural atmosphere.                                                                               |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 | [Triple Falls Trail on Bruce Creek](https://www.alltrails.com/trail/us/tennessee/triple-falls-trail-on-bruce-creek)                                                                                | Carryville, TN              | 1.9 miles        | Wonderful hike! Beautiful waterfalls right from start and the mountain top views are breathtaking.                                  |
@@ -138,7 +140,7 @@ My hikes in India and Europe aren't included.
 | [Middle Prong Trail](https://hikinginthesmokys.com/middle-prong-trail/)                                                                                                                            | Townsend, TN                | 8.3 miles        | Night hike to see fireflies. Watching synchronous fireflies was beautiful.                                                          |
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------------------+------------------+-------------------------------------------------------------------------------------------------------------------------------------+
 
-### 🪣 Bucket List
+### 🥾 Hiking Wishlist
 
 -   [Big south fork](https://www.nps.gov/biso/index.htm)
 -   [Bald falls](https://www.tnvacation.com/local/tellico-plains-bald-river-falls)
@@ -148,7 +150,6 @@ My hikes in India and Europe aren't included.
 -   Sound of music
 -   Falls creek falls
 -   Grayson Highlands
--   Cades Cove --- biking
 
 # 🚴 Bike Rides
 
@@ -208,12 +209,14 @@ Since I got my VanMoof, I've been going on bike trips every so often.
 | Paddle-boarding                    | Ijams, Knoxville, TN                | use paddle board for diving; paddle-boarding is boring by itself :)                           |
 +------------------------------------+-------------------------------------+-----------------------------------------------------------------------------------------------+
 
-### 🪣 Bucket List
+# 🪣 Bucket List
 
--   Cliff Jumping
-
--   Scuba with Bull sharks, Beqa Lagoon and Yasawa Islands - Fiji
-
--   Tonga, whale swimming
-
--   Marsha Shagra, Egypt - untuned diving in Red Sea
+-   Rafting in Rogue River, Oregon
+-   Scuba diving with Bull sharks in Beqa Lagoon and Yasawa Islands, Fiji
+-   Whale swimming in Tonga
+-   Marsa Shagra, Egypt - untamed diving in the Red Sea
+-   Learn Mandarin
+-   Visit 50 countries of the world (currently at 23) --- must do at least 25% in this life
+-   Omakase in Japan
+-   Ajanta Ellora in India
+-   Visit all seven continents (currently at 4)
