@@ -36,3 +36,7 @@ Here's what I've listened to recently.
 [Tool source](https://blog.spacehey.com/entry?id=221954).
 
 <a href="https://www.last.fm/user/Xaxeki"><img src="https://lastfm-recently-played.vercel.app/api?user=Xaxeki" height="auto"/></a>
+
+## I like to read.
+
+You can see my bookshelf at <https://bookshelf.so/harsh17> or on [Goodreads](https://www.goodreads.com/user/show/66858367-harshvardhan).
