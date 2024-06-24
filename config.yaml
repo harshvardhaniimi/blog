@@ -51,3 +51,9 @@ markup:
       unsafe: true
 
 enableRobotsTXT: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - Sitemap
