@@ -1,0 +1,165 @@
+---
+title: Spotify Randomizer
+subtitle: "A new playlist of random songs that I haven't listened in a while generated automatically every Monday"
+summary: "A new playlist of random songs that I haven't listened in a while generated automatically every Monday"
+author: Harshvardhan
+date: '2023-08-26'
+slug: spotify-randomizer
+categories:
+  - coding
+  - blog
+  - life
+  - thoughts
+tags: []
+---
+
+
+
+<p><img src="images/_6306366c-de6a-46be-8e9e-41bd55a73565.jpeg" /></p>
+<p>As of today, I have 3,455 songs in my liked songs in Spotify (kinda <a href="https://open.spotify.com/track/39PmNHf8HzUmhxrql2J6Rf?si=823380d6f55343ed">Trippy</a> to say). Needless to say, I <a href="https://open.spotify.com/track/7heMX7gyHP0mhTlNgd7Lxd?si=fccfd1c68adc40d7">really like</a> listening to songs. I have many playlists in my library but almost all playlists require my active attention to maintain.</p>
+<p>I have maintained my playlists religiously. Historically. Not recently. I have grown reliant on Spotify’s algorithm to suggest me songs. However, the reliance on algorithm has various pitfalls.</p>
+<p>First, it tends to “predict” what songs I’m likely to not hit skip at. I am not sure that’s a parameter I’d personally optimise for. I want to discover new songs. Discover Weekly has never satisfied me. They are way too weird for my taste. They’re sometimes Tamil songs by artists that I listen to – I’d skip them without second thoughts, simply because it’s highly unlikely I’d enjoy it. (Though that’s not universally true.)</p>
+<p>Second, once Spotify learns what songs I like, it will recommend me the same ones over and over. Its algorithm is much better than YouTube for music but still, lacking in scope for me, when I am trying to explore from my own library.</p>
+<p>Third, there are many songs that Spotify’s algorithm recommended me or I Shazamed but have’t listened to it at all since adding to my library. Spotify tends to play songs that are more recent in my library and have played them. Here’s Spotify’s nine year old article on how their <a href="https://engineering.atspotify.com/2014/02/how-to-shuffle-songs/">Shuffle</a> works.</p>
+<p>Long story short, I needed a way to handle it myself. I needed something that would:</p>
+<ol style="list-style-type: decimal">
+<li>Look at my songs library and identify songs that I added to my library more than 90 days ago.</li>
+<li>Create a weighted sample from those songs. The longer the song has been in my library, the more likely it should be to be picked up.</li>
+<li>Randomly choose 100 songs from the weighted sample of all the old songs.</li>
+<li>Repeat the process every week so that I get 100 songs playlist every week.</li>
+<li>Automate all the above steps so that it all works automatically.</li>
+</ol>
+<p>I designed a complete system for myself. The system will look through my library, identify the songs that I liked long ago (more than 90 days ago), create a weighted sample of them based on how old they are from today, and then draw 100 songs from it.</p>
+<p>In case you are interested, here is how I did it. The complete code is at <a href="https://github.com/harshvardhaniimi/spotify-randomizer">Github</a>. In this blogpost, I am going to describe the major challenges, how I overcame them, and how you can create a similar automation service with your Spotify <strong>for free</strong>.</p>
+<div id="how-i-created-my-discovered-weekly-playlist" class="section level2">
+<h2>How I Created My “Discovered” Weekly Playlist?</h2>
+<p>Spotify’s API has several limitations on what can you get from it. The biggest one is that you cannot get more than 50 songs from any function call.</p>
+<p>Therefore, I query songs one after another in smaller batches. Here is the code for the same.</p>
+<pre class="python"><code># Batching through songs, one &quot;Verse&quot; at a time
+offset = 0
+liked_songs = []
+while True:
+    batch = sp.current_user_saved_tracks(offset=offset)
+    liked_songs += batch[&#39;items&#39;]
+    if batch[&#39;next&#39;] is None:
+        break
+    offset += len(batch[&#39;items&#39;])</code></pre>
+<p>I was constantly debugging why was I only getting 50 songs at a time. Spotipy package on Python, much to my dismay, doesn’t give any warning or even mention this limitation in their documentation. This way, I was able to get all 3000+ songs from library in a single object.</p>
+<p>Filtering the songs that were older than 90 days wasn’t hard. All I needed to do was get the song’s added dates and calculate the age of songs in my library. The ninja-technique there was in handling the time-zones, as has been my <a href="https://www.harsh17.in/exploring-my-spotify-listening/">previous experience</a> with Spotify when I was trying to understand my listening better.</p>
+<div id="aging-like-fine-wine-older-songs-get-more-weight" class="section level3">
+<h3>🥂 Aging like fine wine, older songs get more weight</h3>
+<p>Once I got the time when they were added, I need a method to weight older songs higher than newer songs. Like I said, my primary complaint with Spotify was that it played the same songs for me every (damn) time. Thus, as a statistician, I had to take a weighted sample. The below approach is not the most efficient but probably the simplest.</p>
+<pre class="python"><code>weighted_songs = []
+for song in liked_songs:
+    added_date = datetime.datetime.strptime(song[&#39;added_at&#39;],
+    &quot;%Y-%m-%dT%H:%M:%SZ&quot;)
+    
+    # Add UTC timezone information
+    added_date = added_date.replace(tzinfo=datetime.timezone.utc)
+    age_days = (datetime.datetime.now(datetime.timezone.utc) - added_date).days
+    
+    if age_days &gt; 90:
+        weighted_songs += [song[&#39;track&#39;][&#39;id&#39;]] * age_days</code></pre>
+<p>Following to getting the full list of pretentiously-serendipitous songs, I need to select 100 songs from that list. Easy peeasy.</p>
+<pre class="python"><code>random.shuffle(weighted_songs)
+selected_tracks = weighted_songs[:100]</code></pre>
+<p>Once I have the songs, I need to push it to a new playlist on Spotify. Since I want the entire process to repeat every Monday, it doesn’t need to create a new playlist every week. Rather, if the playlist already exists, it should just replace it. When you delete a playlist in Spotify, it goes to “Trash Can” (sort of). I didn’t want to clutter my trash can either.</p>
+<p>If a playlist by that name already exists, the following code will delete all songs from it and then add 100 songs found this week.</p>
+<pre class="python"><code>user_id = sp.me()[&#39;id&#39;]
+playlist_name = &#39;random&#39;
+playlists = sp.user_playlists(user_id)
+existing_playlist_id = None
+
+# Check if a playlist with the same name already exists
+for playlist in playlists[&#39;items&#39;]:
+    if playlist[&#39;name&#39;] == playlist_name:
+        existing_playlist_id = playlist[&#39;id&#39;]
+        break
+
+# If it exists, clear the tracks
+if existing_playlist_id:
+    sp.playlist_replace_items(existing_playlist_id, [])
+    playlist_id = existing_playlist_id
+else:
+    # If it doesn&#39;t exist, create a new one
+    playlist = sp.user_playlist_create(user_id, playlist_name, 
+      public=True, 
+      description=&quot;This week&#39;s random songs that I haven&#39;t listened in a while&quot;)
+    playlist_id = playlist[&#39;id&#39;]
+
+# Add selected tracks to the playlist
+sp.playlist_add_items(playlist_id, selected_tracks)</code></pre>
+<p>That’s it! Getting the above code to execute wasn’t very hard. Hardly took an hour from start to end. However, I realised the bottleneck.</p>
+<p>If I only want to execute this process once. However, I wanted to automate it. It should do this every week, without me noticing it. This is where Github Actions comes into picture.</p>
+</div>
+<div id="getting-it-all-automated" class="section level3">
+<h3>🤖 Getting it all automated…</h3>
+<p>Getting Github Actions to work with Spotipy was a big <a href="https://open.spotify.com/track/7heMX7gyHP0mhTlNgd7Lxd?si=fccfd1c68adc40d7">automation</a> ask. You see, when you connect with Spotify’s API with Spotipy, you have to use a browser. You provide your <code>client_id</code> and <code>client_secret</code> with <code>redirect_uri</code> (which needs to be <code>http://localhost:8000</code> or <a href="https://community.spotify.com/t5/Spotify-for-Developers/Redirect-URI-needed/td-p/5067419">something similar</a>). Then, it opens a prompt saying “Do you authorize this app?” and you approve, then copy and paste the link in your VSCode tab. (Steps to get <code>client_id</code> and <code>client_secret</code> are near the end of this article.)</p>
+<p>For the first time you run this, I think you need to do this. Once you approve the app, it creates a access token in your computer’s cache memory. However, this token is not permanent. There is a separate refresh token that will make sure other tokens (primarily access token) don’t get stale. This is interactive when it runs on your computer.</p>
+<p>When running the code in Github actions, you don’t have access to a persistent cache memory. There is no browser authentication. I was not the first one to run into <a href="https://github.com/spotipy-dev/spotipy/issues/834">this issue</a>. But I was able to solve this, again thanks to ChatGPT.</p>
+<p>But first, we need the tokens for the first time.</p>
+</div>
+<div id="tokens-for-the-first-time" class="section level3">
+<h3>🌓 Tokens for the first time</h3>
+<p>You will need to get the access tokens for the <a href="https://open.spotify.com/track/2Gl0FzuLxflY6nPifJp5Dr?si=47794e2e298c4d45">first time</a>. Run the <a href="https://github.com/harshvardhaniimi/spotify-randomizer/blob/main/notebook.ipynb">following script</a> that gets the tokens.</p>
+<pre class="python"><code>redirect_uri = &quot;http://localhost:8000/&quot;
+
+auth_manager = SpotifyOAuth(client_id=client_id, client_secret=client_secret, redirect_uri=redirect_uri, scope=&quot;playlist-modify-public user-library-read user-read-recently-played&quot;)
+token_info = auth_manager.get_access_token(as_dict=True)</code></pre>
+<p><code>token_info</code> has the token you need. Keep it safe to put in Github’s repository secrets.</p>
+<p>From there on, I am able to create an OAuth2 object without the refresh token, thus no need for a browser authentication.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+<pre class="python"><code># Function to refresh access token
+def refresh_access_token(refresh_token):
+    client_id = os.environ[&#39;SPOTIPY_CLIENT_ID&#39;]
+    client_secret = os.environ[&#39;SPOTIPY_CLIENT_SECRET&#39;]
+    payload = {
+        &#39;grant_type&#39;: &#39;refresh_token&#39;,
+        &#39;refresh_token&#39;: refresh_token,
+    }
+    auth_header = {&#39;Authorization&#39;: &#39;Basic &#39; + 
+    base64.b64encode((client_id + &#39;:&#39; + client_secret).encode()).decode()}
+    response = requests.post(&#39;https://accounts.spotify.com/api/token&#39;, 
+    data=payload, headers=auth_header)
+    return response.json().get(&#39;access_token&#39;)
+
+client_id = os.environ[&#39;SPOTIPY_CLIENT_ID&#39;]
+client_secret = os.environ[&#39;SPOTIPY_CLIENT_SECRET&#39;]
+refresh_token = os.environ[&#39;SPOTIPY_REFRESH_TOKEN&#39;]
+new_access_token = refresh_access_token(refresh_token)
+
+# Set up Spotipy
+sp = spotipy.Spotify(auth=new_access_token)</code></pre>
+<p>Essentially, the function uses a different approach to get the access token by making a raw POST query instead of using Spotipy. This works like a charm!</p>
+<p>With all these steps, I was able to get the complete thematic working! Now, every monday morning, I wake up to a new playlist of 100 songs that I haven’t listened in a while. What a wonderful way to start a week!</p>
+</div>
+</div>
+<div id="you-have-created-something-awesome.-how-do-i-use-this" class="section level2">
+<h2>🌟 You have created something awesome. How do I use this?</h2>
+<p>Thanks, here are the steps. First, get your client ID and client secret from Spotify’s developers dashboard.</p>
+<div id="how-to-get-client-id-and-client-secret" class="section level3">
+<h3>How to get Client ID and Client Secret?</h3>
+<p>Here’s Spotify’s documentation on how to get Client ID and Secret. <a href="https://developer.spotify.com/documentation/web-api/concepts/apps">developer.spotify.com</a></p>
+</div>
+<div id="got-it.-next" class="section level3">
+<h3>Got it. Next?</h3>
+<p>Fork my repository on <a href="https://github.com/harshvardhaniimi/spotify-randomizer">Github</a>. Then, head over to Secrets and Variables, Actions and create these three repository secrets.</p>
+<p><img src="images/ss1.png" /></p>
+<p>You should have the first two from your app and the last from the code snippet I asked you to execute earlier.</p>
+</div>
+</div>
+<div id="humma-humma" class="section level2">
+<h2><a href="https://open.spotify.com/track/7heMX7gyHP0mhTlNgd7Lxd?si=fccfd1c68adc40d7">🫶 Humma, humma…</a></h2>
+<p>Now you are done! Eat a 🎂 to celebrate or have a cup of coffee ☕. To test that everything is working, head over to “Actions” tab on your repo, select “Create Randomized Spotify Playlist” workflow and click run workflow.</p>
+<p>It should take around 1-2 minutes and you should see a new playlist on your Spotify library! Pro-tip: pin it for easy access.</p>
+</div>
+<div id="my-this-weeks-random-playlist" class="section level2">
+<h2>🎧 My This Week’s Random Playlist</h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2DPl1wxg7xyhvZIAEa1Z7K?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+</iframe>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>I’m kinda confused on how access token and refresh token play with each other, so I’d appreciate your explanation if you know better.<a href="#fnref1" class="footnote-back">↩︎</a></p></li>
+</ol>
+</div>

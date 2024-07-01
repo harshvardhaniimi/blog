@@ -1,0 +1,194 @@
+---
+title: Number of PhDs by Field
+summary: An Incomplete Data Exploration
+subtitle: An Incomplete Data Exploration
+author: Harshvardhan
+date: '2022-02-20'
+slug: number-of-phds
+categories:
+  - R
+  - statistics
+  - economics
+  - thoughts
+tags: []
+draft: false
+---
+
+Yesterday I was talking to one of my friends about his plans post PhD. "I want to go for pure sciences and abstract mathematics, but there are hardly any positions in academia on these topics.", he said. It got me into thinking how many PhD students graduate every year and if the demand (in academia or in industry) is less than that. But I didn't even know how many PhDs are awarded each year, let alone employed.
+
+While searching for a dataset for my Text Mining class project, I discovered this dataset on number of PhDs by field. So, let's explore!
+
+```{r}
+library(tidyverse)
+library(garlic)
+library(DT)
+theme_set(theme_linedraw())
+```
+
+```{r}
+# Loading dataset from their repository
+phds = readr::read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2019/2019-02-19/phd_by_field.csv")
+phds
+```
+
+There are many records by fields --- in three levels of granularity.There are 337 fields and we have records for each of them between 2008 to 2017. Let's see how many people are from which field.
+
+```{r}
+phds %>%
+   group_by(broad_field) %>%
+   summarise(n_phds = sum(n_phds, na.rm = T)) %>%
+   arrange(desc(n_phds)) %>%
+   datatable(colnames = c("Broad Field", "Number of PhDs"),
+             rownames = FALSE,
+             caption = "Number of PhDs by their broad fields. Life sciences lead the way.") %>%
+   formatRound("n_phds", digits = 0)
+```
+
+**Life sciences** has most number of graduates. **Engineering** has least number of graduates --- even less than mysterious **Other**. Surprisingly social sciences, humanities and eucation are higher than mathematics and computer science. And they lead by a margin. The number of graduates in "humanities and social science" subjects is four times the number of PhDs in in "hard sciences" like engineering and maths. No wonder there is such a shortage of people in the tech world.
+
+Life sciences as such a broad encompassing field. Let's explore what is covered in life sciences.
+
+```{r}
+phds %>%
+   filter(broad_field == "Life sciences") %>%
+   group_by(major_field) %>%
+   summarise(n_phds = sum(n_phds, na.rm = T)) %>%
+   arrange(desc(n_phds)) %>%
+   datatable(colnames = c("Major Field", "Number of PhDs"),
+             rownames = FALSE,
+             caption = "Number of PhDs by their major fields. Biology, excluding health sciences, leads the way.") %>%
+   formatRound("n_phds", digits = 0)
+```
+
+Biological and biomedical sciences has the most number of graduates. Let me explore engineering too. There are so few PhDs in geosciences. With climate change becoming another major issue, I wonder why the field isn't picking up fast.
+
+Let's see the fields in engineering.
+
+```{r}
+phds %>% 
+  filter(broad_field == "Engineering") %>% 
+  group_by(major_field) %>% 
+  summarise(n_phds = sum(n_phds, na.rm = T)) %>% 
+  arrange(desc(n_phds))
+```
+
+Oh, so no information. The information is nested in another column, I guess. I'll have to group by field.
+
+```{r}
+phds %>% 
+  filter(broad_field == "Engineering") %>% 
+  group_by(field) %>% 
+  summarise(n_phds = sum(n_phds, na.rm = T)) %>% 
+  arrange(desc(n_phds)) %>% 
+   datatable(colnames = c("Field", "Number of PhDs")) %>% 
+   formatRound("n_phds", digits = 0)
+```
+
+Computer engineering PhDs are most popular; twice as much as next in the list. Environmental engineering is the second most popular. That's impressive. Let's visualise the counts.
+
+```{r}
+phds %>% 
+  filter(broad_field == "Engineering") %>% 
+  group_by(field) %>% 
+  summarise(n_phds = sum(n_phds, na.rm = T)) %>% 
+  ggplot(aes(reorder(field, n_phds), n_phds)) +
+  geom_col() +
+  coord_flip() +
+  labs(y = "Number of PhDs", x = "Field (Engineering only)")
+```
+
+The data gives me opportunity to see how it grew up with the rise in popoularity of computer engineering. I've heard numerous time that its popularity has increased over the years.
+
+```{r}
+# ggrepel for text labels
+library(ggrepel)
+
+phds %>%
+   filter(broad_field == "Engineering") %>%
+   mutate(label = if_else(year == max(year), field, NA_character_)) %>%
+   ggplot(aes(x = year, y = n_phds, colour = field)) +
+   geom_line() +
+   scale_x_continuous(breaks = seq(from = 2008, to = 2017, by = 1)) +
+   geom_label_repel(aes(label = label),
+                    nudge_x = 1,
+                    na.rm = TRUE) +
+   labs(x = "Year", y = "Number of PhDs") +
+   theme(legend.position = "none")
+```
+
+```{r}
+phds_top_engineering = phds %>% 
+  filter(broad_field == "Engineering") %>% 
+  group_by(field) %>% 
+  summarise(n_phds = sum(n_phds)) %>% 
+  filter(n_phds > 100) %>% 
+  slice_max(order_by = n_phds, n = 6)
+
+phds_top_engineering
+
+phds %>% 
+  filter(field %in% phds_top_engineering$field) %>% 
+ggplot(aes(x = year, y = n_phds, fill = field)) +
+  geom_bar(stat = "identity") + 
+  scale_x_continuous(labels = scales::label_number(accuracy = 1)) +
+  scale_fill_manual(values = MetBrewer::met.brewer("Hokusai1", 6)) +
+  facet_wrap( ~ field) +
+  labs(x = "Year", y = "Number of PhDs", fill = "Field")
+```
+
+Computer engineering has been ever popular. I didn't expect that.
+
+But wait, wasn't there a computer science in `major_field`? What was that? It was called `Mathematics and computer sciences`.
+
+```{r}
+phds %>%
+   filter(broad_field == "Mathematics and computer sciences") %>%
+   group_by(major_field) %>%
+   summarise(n_phds = sum(n_phds, na.rm = T)) %>%
+   arrange(desc(n_phds)) %>%
+   datatable(colnames = c("Major Field", "Number of PhDs"),
+             rownames = FALSE,
+             caption = "Mathematics and computer sciences has two fields.") %>%
+   formatRound("n_phds", digits = 0)
+```
+
+```{r}
+phds %>%
+   filter(broad_field == "Mathematics and computer sciences") %>%
+   filter(n_phds >= 300) %>% 
+   mutate(label = if_else(year == max(year), field, NA_character_)) %>%
+   ggplot(aes(x = year, y = n_phds, colour = field)) +
+   geom_line() +
+   scale_x_continuous(breaks = seq(from = 2008, to = 2017, by = 1)) +
+   geom_label_repel(aes(label = label),
+                    nudge_x = 1,
+                    na.rm = TRUE) +
+   labs(x = "Year", y = "Number of PhDs") +
+   theme(legend.position = "none")
+```
+
+Computer engineering averaged around 400; computer science averaged around 1500. I think this the "computer science" in general parlance.
+
+------------------------------------------------------------------------
+
+**This exploration is incomplete. I couldn't finish it in time but I'd get back to it someday.**
+
+Today I found this wonderful visualisation on Twitter that I thought to replicate for the number of PhDs by field.
+
+```{r}
+library(tweetrmd)
+tweet_screenshot("https://twitter.com/jenjentro/status/1512997114896269312?t=nWQqyQa3tHQVNSHPakh2TA")
+```
+
+Her codes were available on [Github](https://github.com/jenjentro/TidyTuesday/blob/master/2022/2022-04-05/tidytues_newsorg.R).
+
+```{r}
+# Loading packages
+library(tidytuesdayR)
+library(tidylog)
+library(showtext)
+```
+
+```{r}
+
+```

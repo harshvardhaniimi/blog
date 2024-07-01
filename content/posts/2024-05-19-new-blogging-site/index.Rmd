@@ -1,0 +1,28 @@
+---
+title: New Blogging Site!
+author: Harshvardhan
+date: '2024-05-19'
+slug: new-blog
+categories:
+  - blog
+tags:
+  - blog
+draft: no
+---
+
+I have some exciting news: I've moved my blogs from www.harsh17.in/blog to blog.harsh17.in. This change aims to keep my blogs separate from the rest of the information on my site.
+
+Hugo Apero, the theme I use for my online home, has a beautiful organization. However, once I had more than 20 blogs, the list started to look cluttered. As I am going to start looking for jobs soon, I wanted my "personal" and "professional" websites to look slightly different. Additionally, I wanted the experience of managing another website.
+
+With these goals in mind, I created a new Hugo site, managed through R Blogdown. I love Blogdown for its simplicity and flexibility:
+
+-   **Ease of setup:** Quickly get a site up and running.
+-   **Markdown support:** Write posts in Markdown.
+-   **Integration:** Seamlessly integrates with R and RStudio.
+-   **Customization:** Easily customizable themes and layouts.
+
+The theme I'm using for the new site is called Hugo Archie (<https://github.com/athul/archie>). I've streamlined it by including only the front page, a page listing all blogs, and a page with tags. Plain and simple, right?
+
+Please note that the old URLs might not work. You will need to replace `www` with `blog` in the link. For example, [www.harsh17.in/languages/](www.harsh17.in/languages/) becomes <https://blog.harsh17.in/languages/>.
+
+As always, feel free to email me if you find my blog useful. You can also sign my guestbook here: [Guestbook](https://users3.smartgb.com/g/g.php?a=s&i=g36-36168-7b).

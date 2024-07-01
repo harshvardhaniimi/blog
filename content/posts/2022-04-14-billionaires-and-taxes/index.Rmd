@@ -1,0 +1,207 @@
+---
+title: Billionaires and Taxes
+subtitle: Some Visualisation on Taxes by Rich
+summary:
+  How much do the super rich really pay? Until now, the answer was unknown --- thanks to privacy laws. Recently, tax returns of the super rich was leaked to [ProPublica](https://projects.propublica.org/americas-highest-incomes-and-taxes-revealed/). I thought of exploring the billionaires and their tax rates.
+author: Harshvardhan
+date: '2022-04-14'
+slug: billionaires-and-taxes
+categories:
+  - business
+  - economics
+  - R
+  - life
+  - thoughts
+tags: []
+---
+
+"Wealth inequality is increasing!", "Rich people don't pay enough taxes", "THEY aren't doing enough" --- we have all heard these lines at some point in our life. Salaried people protesting against super-high taxes, college students protesting on behalf of everyone, and, of course, [Bernie Sanders](https://twitter.com/BernieSanders/status/1478467316694278149?s=20&t=2KkbUq3QQi7cVaAXVZruFg).
+
+![](images/6clv2s.jpeg)
+
+How much do the super rich really pay? Until now, the answer was unknown --- thanks to privacy laws. Recently, tax returns of the super rich was leaked to [ProPublica](https://projects.propublica.org/americas-highest-incomes-and-taxes-revealed/). I thought of exploring the billionaires and their tax rates.
+
+# Data
+
+I scrapped data for top 400 wealthiest individuals in US by their income reported to Federal government. Here's the CSV file for the same.
+
+```{r echo=FALSE}
+xfun::embed_file("/Users/harshvardhan/Desktop/Dump/income_taxes.csv")
+#knitr::opts_chunk$set(echo = FALSE, results = 'hide')
+```
+
+```{r, include=FALSE}
+# Libraries
+library(tidyverse)
+library(stringr)
+library(scales)
+
+# Cleaning
+data = read_csv("/Users/harshvardhan/Desktop/Dump/income_taxes.csv")
+data_modified = na.omit(data)
+```
+
+```{r, include = FALSE}
+# function to convert currency in dollars to values
+currency = function(x)
+{
+   for (i in seq_along(x))
+   {
+   if(str_sub(x[i], start = -1) == "B")
+   {
+      x[i] = as.numeric(str_sub(x[i], 2, -2)) * 10^9
+   }
+   
+   if(str_sub(x[i], start = -1) == "M")
+      x[i] = as.numeric(str_sub(x[i], 2, -2)) * 10^6
+   }
+   return(x)
+}
+
+# Function to extract percentage numbers
+percentage = function(x)
+{
+   x = as.numeric(str_sub(x, 1, -2))
+   return(x)
+}
+```
+
+```{r, include = FALSE}
+# Applying functions to data
+data_modified$Income = as.numeric(currency(data_modified$Income))
+data_modified$Fed_Tax = percentage(data_modified$`Federal Tax Rate`)
+data_modified$Inc_Low_Tax = percentage(data_modified$`%income in lower tax rate`)
+data_modified$Tax_Deduc_Inc = percentage(data_modified$`% of income deducted`)
+
+data = data_modified %>% 
+   select(-`Federal Tax Rate`, -`%income in lower tax rate`, -`% of income deducted`)
+#data
+```
+
+> The "income" described in this article is adjusted gross income. To calculate income taxes, we used [the IRS definition](https://www.irs.gov/pub/irs-pdf/p1304.pdf#page=277) of "total income tax," which excludes self-employment tax and a few other non-income taxes that appear on Form 1040. The effective income tax rates we present are weighted averages --- that is, the sum of income tax from 2013 to 2018 divided by the sum of adjusted gross income over that period. We updated our figures to reflect any amended filings or audits in our database.
+
+# Average Tax Rates for Richest 400 Americans
+
+There's high variance in high income earners. The general trend hints at lower income tax rates as the income increases. Note that the x-axis scale is in $\log(x)$. That means, the actual income is $10^x$.
+
+```{r, echo = FALSE, message=FALSE, warning = FALSE}
+p = data %>% 
+   #filter(Income > 10^9) %>% 
+   ggplot(aes(x = Income, y = Fed_Tax, colour = Sector, text = Name)) +
+   geom_point() +
+   guides(x = guide_axis(angle = 90)) +
+   scale_x_continuous(trans = "log10", labels = label_dollar()) +
+   theme_minimal()
+
+p = p + geom_hline(yintercept = 22.4)
+
+p = p + annotate("text", x = 1.8e9, y = 25, label = "Average US Tax Rate")
+
+p = p + geom_hline(yintercept = 22.4)
+
+p = p + xlab("Log Average Income (2013 - 18)") + 
+   ylab("Effective Federal Tax Rate")
+plotly::ggplotly(p)
+```
+
+This is rather difficult to read. Let me separate it into a grid.
+
+# Sector-wise Average Taxes Rates for Richest 400 Americans
+
+```{r, echo = FALSE, message=FALSE, warning = FALSE}
+p = data %>% 
+   ggplot(aes(x = Income, y = Fed_Tax, colour = Sector, text = Name)) +
+   geom_point() +
+   geom_smooth() +
+   scale_x_continuous(trans = "log10", labels = label_dollar(accuracy = 100, scale = 0.000001)) +
+   ylim(c(0, 60)) +
+   facet_wrap(. ~ Sector, nrow = 5, ncol = 2) +
+   xlab("Log Average Income in Millions (2013 - 18)") + 
+   ylab("Effective Federal Tax Rate") +
+#   labs(title = "Rich People and Taxes",
+#        caption = "There is greater consistency between the sectors") +
+  guides(x = guide_axis(angle = 90), colour = FALSE) +
+   theme_linedraw()
+
+plotly::ggplotly(p)
+```
+
+# Who Paid The Highest Tax?
+
+I calculate total taxes paid in five years as fives times average income times average effective tax rate.
+
+```{r, echo = FALSE, message=FALSE, warning = FALSE}
+data = data %>% 
+  mutate(Taxes = 5 * Income * Fed_Tax/100)
+
+library(DT)
+data %>% 
+  arrange(desc(Taxes)) %>% 
+  select(Name, Sector, Taxes) %>% 
+  mutate(Taxes = Taxes / 1000000) %>% 
+  datatable(colnames = c("Taxes (in Millions)" = "Taxes"),
+            caption = "Total taxes paid between 2013 and 2018, sorted by tax amount.") %>% 
+  formatCurrency(3, digits = 0)
+```
+
+# Taxes vs Income
+
+The "average" hides a lot of information. I want to compare total taxes in last eight years vs total income in last eight years.
+
+```{r, echo = FALSE, message=FALSE, warning = FALSE, fig.height=10}
+p = data %>% 
+  select(Name, Income, Taxes) %>% 
+  mutate(Income = 5 * Income) %>% 
+  pivot_longer(c(Income, Taxes), names_to = "Variable", values_to = "Values") %>% 
+  mutate(Values = Values / 1000000) %>% 
+  ggplot(aes(x = reorder(Name, Values), y = Values, fill = Variable)) +
+  geom_bar(stat='identity', position='dodge') +
+  coord_flip() +
+  scale_y_continuous(limits = c(0, 15000), breaks = seq(0, 15000, by = 5000), labels = label_dollar()) +
+  labs(x = "Income / Taxes (in millions)", y = "Individual") +
+  theme_linedraw() 
+
+plotly::ggplotly(p)
+```
+
+# Highest Effective Tax Rates
+
+```{r, echo = FALSE, message=FALSE, warning = FALSE}
+data %>% 
+  arrange(desc(Fed_Tax)) %>% 
+  select(Name, Sector, Fed_Tax) %>% 
+  datatable(caption = "Highest Federal Tax Rates") %>% 
+  formatRound(3, digits = 1)
+```
+
+### Table with "Name Withheld" removed.
+
+```{r, echo = FALSE, message=FALSE, warning = FALSE}
+data %>% 
+  filter(Name != "Name withheld") %>% 
+  arrange(desc(Fed_Tax)) %>% 
+  select(Name, Sector, Fed_Tax) %>% 
+  datatable(caption = "Highest Federal Tax Rates", colnames = c("Tax Rates" = "Fed_Tax")) %>% 
+  formatRound(3, digits = 1)
+```
+
+# Average Tax Rates by Sector
+
+```{r, echo = FALSE, message=FALSE, warning = FALSE}
+data %>% 
+  group_by(Sector) %>% 
+  summarise(Income = mean(Income), Fed_Tax = mean(Fed_Tax)) %>% 
+  arrange(desc(Income)) %>% 
+  datatable(caption = "Average Income and Tax Rates by Sector",
+            colnames = c("Tax Rate" = "Fed_Tax")) %>% 
+  formatCurrency(2, digits = 0) %>% 
+  formatRound(3, digits = 1)
+```
+
+Heirs with financial business have the highest average income. People from manufacturing pay the highest federal taxes.
+
+------------------------------------------------------------------------
+
+### Curious Case of Name Withheld
+
+I have no clue what that means. The original article gives no explanation on what that means.

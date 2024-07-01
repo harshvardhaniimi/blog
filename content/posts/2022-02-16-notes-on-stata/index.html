@@ -1,0 +1,83 @@
+---
+title: Notes on STATA
+subtitle: Some nitty-gritties that economists remember but I don't
+summary: Some nitty-gritties that economists remember but I don't
+author: Harshvardhan
+date: '2022-02-16'
+slug: notes-on-stata
+categories:
+  - STATA
+  - economics
+tags: []
+---
+
+
+
+<div id="conventions-through-this-page" class="section level4">
+<h4>Conventions through this page</h4>
+<p><code>x</code> is the name of the variable.</p>
+<hr />
+</div>
+<div id="set-working-directory" class="section level3">
+<h3>Set Working Directory</h3>
+<pre class="r"><code>cd &quot;/directory/&quot;</code></pre>
+</div>
+<div id="use-a-dataset" class="section level3">
+<h3>Use a Dataset</h3>
+<pre class="r"><code>use data.dta, clear</code></pre>
+</div>
+<div id="clear-all-items-from-memory" class="section level3">
+<h3>Clear all items from memory</h3>
+<pre class="r"><code>clear all</code></pre>
+<p>See <a href="https://www.stata.com/manuals13/dclear.pdf">documentation</a> for details.</p>
+</div>
+<div id="display-all-items" class="section level3">
+<h3>Display all items</h3>
+<pre class="r"><code>list</code></pre>
+</div>
+<div id="display-first-element-only-useful-for-a-scalar" class="section level3">
+<h3>Display first element only (useful for a scalar)</h3>
+<pre class="r"><code>di x</code></pre>
+</div>
+<div id="setting-number-of-observations" class="section level3">
+<h3>Setting number of observations</h3>
+<pre class="r"><code>qui set obs 30</code></pre>
+<p><code>qui</code> says this command is executed quietly, i.e. with no output.</p>
+</div>
+<div id="summary-of-a-variable" class="section level3">
+<h3>Summary of a variable</h3>
+<pre class="r"><code>summarize x</code></pre>
+<p>This will number of observations, mean, standard deviation, minimum and maximum.</p>
+</div>
+<div id="describe" class="section level3">
+<h3>Describe</h3>
+<pre class="r"><code>describe x</code></pre>
+<p>This will tell us the type of variable it is.</p>
+</div>
+<div id="functions" class="section level1">
+<h1>Functions</h1>
+<p>Functions in Stata are called Programs. See <a href="https://www.stata.com/manuals13/rsimulate.pdf">documentation</a>.</p>
+<p>Below is a sample program named <code>onesample</code> that generates 30 uniform random numbers and calculates their mean. We do need to specify <code>rclass</code> to specify the kind of return for the function. Other options is <code>eclass</code>.</p>
+<p><code>drop _all</code> is different from <code>drop all</code> ; the former drops all observations and the latter looks for a variable named <code>all</code> and deletes that.</p>
+<pre class="r"><code>program onesample, rclass
+    drop _all
+    qui set obs 30
+    gen x = runiform()
+    summ x
+    return scalar mean = r(mean)
+end</code></pre>
+</div>
+<div id="monte-carlo-simulation" class="section level1">
+<h1>Monte Carlo Simulation</h1>
+<p>If the function is defined as above, we can use the following codes to perform Monte Carlo simulation.</p>
+<pre class="r"><code>* Simulate it 10000 times
+simulate xbar = r(mean), seed(0) reps(10000): onesample</code></pre>
+</div>
+<div id="visualisation" class="section level1">
+<h1>Visualisation</h1>
+<div id="histogram" class="section level3">
+<h3>Histogram</h3>
+<pre class="r"><code>hist x, width(0.1) title(&quot;Histogram of x&quot;)</code></pre>
+<p>See <a href="https://www.stata.com/manuals/rhistogram.pdf">documentation</a> for details.</p>
+</div>
+</div>
