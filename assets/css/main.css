@@ -44,7 +44,7 @@ body::before {
 }
 html {
   color: #232333;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Fira Sans', monospace;
   font-size: 15px;
   line-height: 1.6em;
 }
@@ -58,12 +58,13 @@ body{
 
 ::selection {
   background: var(--maincolor);
-  color: #fff;
+  color: var(--bordercl);
 }
 
 p {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Sedan', sans-serif;
   line-height: 1.5;
+  font-size: 18px;
 }
 
 hr {
@@ -89,16 +90,29 @@ a:hover {
     color: #fff;
 }
 
+/* Unordered lists */
 ul {
   list-style: none;
   padding-left: 2ch;
 }
+
 ul li {
   text-indent: -2ch;
+  font-family: 'Fira Sans';
+  font-size: 16px;
 }
+
 ul > li::before {
-  content: '* ';
-  font-weight: bold;
+  content: '🌻 ';
+  font-family: 'Fira Sans';
+  color: var(--maincolor);
+  font-size: 0.9em;
+}
+
+/* Ordered lists */
+ol {
+  font-family: 'Fira Sans';
+  font-size: 16px;
 }
 
 /* Images */
@@ -178,10 +192,11 @@ header {
 }
 
 header .main {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-size: 1.2rem;
+  font-family: 'Playwrite ES Deco';
+  font-size: 1.3rem;
   margin-top: 2em;
 }
 

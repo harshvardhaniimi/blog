@@ -39,3 +39,41 @@
        url('../fonts/ibm-plex-mono-v6-latin-500italic.ttf') format('truetype'), /* Safari, Android, iOS */
        url('../fonts/ibm-plex-mono-v6-latin-500italic.svg#IBMPlexMono') format('svg'); /* Legacy iOS */
 }
+
+/* sedan-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Sedan';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/sedan-v1-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* playwrite-es-deco-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Playwrite ES Deco';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/playwrite-es-deco-v4-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* handlee-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Handlee';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/handlee-v18-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* ubuntu-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/ubuntu-v20-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
