@@ -16,9 +16,9 @@ Depending on the circumstances, you might see me listed as "Harsh Vardhan," "Har
 ## About This blog
 
 लिखते तो वो लोग हैं, जिनके अंदर कुछ दर्द है, अनुराग है, लगन है, विचार है। जिन्होंने धन और भोग-विलास को जीवन का लक्ष्य बना लिया, वह क्या लिखेंगे?
---- प्रेमचंद, गोदान
+--- मुंशी प्रेमचंद, गोदान
 
-> "People who write have some pain, some love, some passion, some ideas. Those who have made money and pleasure the goals of their life, what will they write?" --- Premchand in Godaan
+> "Those who write must have some pain, some love, some passion, some ideas. Those who have made money and pleasure the goals of their life, what will they write?" --- [Munshi Premchand](https://en.wikipedia.org/wiki/Premchand) in Godaan
 
 You can browse all my writings using the list of [all posts](https://blog.harsh17.in/posts/).
 Alternatively, explore by [topics](https://blog.harsh17.in/tags/).
