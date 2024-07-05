@@ -1,0 +1,129 @@
+---
+title: 'Recommendations: List of Things to Read, Listen and Watch'
+author: Harshvardhan
+date: '2024-07-04'
+slug: read-listen-watch
+categories:
+  - blog
+  - life
+  - thoughts
+tags: []
+draft: no
+---
+
+------------------------------------------------------------------------
+
+All the ones marked \* are freely available at the link.
+
+This will be updated over time.
+
+------------------------------------------------------------------------
+
+The following is the grand list of recommendations from me.
+Currently, it has reading, listening, and watching recommendations.
+It *may* be updated with other recs, but I can't promise.
+The last time I posted a [Rec-List](https://blog.harsh17.in/what-i-find-interesting/) was three years ago on my father's birthday.
+
+# Read 📑
+
+## Short Reads
+
+**Short Stories Collections**
+
+1.  [Axiomatic](https://www.amazon.com/Axiomatic-Short-Stories-Science-Fiction/dp/1597805408) by Greg Egan (Well-thought-out Sci-Fi stories)
+2.  [Stories of Your Life and Others](https://www.amazon.com/Stories-Your-Life-Others-Chiang-ebook/dp/B0048EKOP0) by Ted Chiang[^1] (Anything written by Ted Chiang must be read)
+3.  [Exhalation: Stories](https://www.amazon.com/Exhalation-Stories-Ted-Chiang/dp/1101947888) by Ted Chiang
+4.  [Land of Big Numbers: Stories](https://www.amazon.com/Land-Big-Numbers-Te-Ping-Chen/dp/0358272556) by Te-Ping Chen
+5.  [The Very Best of R.K. Narayan](https://www.amazon.com/Very-Best-R-K-Narayan/dp/8129131021) by R.K. Narayan
+
+[^1]: The movie "Arrival" was based on his short story "Story of Your Life".
+    You might be able to find [individual stories](https://en.wikipedia.org/wiki/Category:Short_stories_by_Ted_Chiang) if you'd like.
+    "The Merchant and the Alchemist's Gate", "Hell Is the Absence of God", "Tower of Babylon", and "Understand" are great starts.
+    "[Understand](https://web.archive.org/web/20140527121332/http://www.infinityplus.co.uk/stories/under.htm)" is my favorite.
+
+**Short Stories**
+
+1.  [The Red Convertible](https://images.shulcloud.com/1202/uploads/Documents/TheRedConverible.pdf) by Louise Erdrich\*
+2.  [The Elephant Vanishes](https://www.newyorker.com/magazine/1991/11/18/the-elephant-vanishes) by Haruki Murakami
+3.  [प्रेमचंद के फटे जूते](https://www.dropbox.com/scl/fi/covivlokq4ttxdobklrvw/.pdf?rlkey=dh4nos5wj8o5ozo1jy3gae87w&dl=0) by हरिशंकर परसाई
+
+**Thoughtful Non-fiction**
+
+1.  [Meditations on Moloch](https://www.lesswrong.com/posts/TxcRbCYHaeL59aY7E/meditations-on-moloch) by Scott Alexander\*
+2.  [Travelling at the Speed of the Soul](https://www.noemamag.com/traveling-at-the-speed-of-the-soul/) by Nick Hunt\*
+3.  [The Art of Chicken Sexing](https://web-archive.southampton.ac.uk/cogprints.org/3255/1/chicken.pdf) by Richard Horsey\*
+
+**Hindi / Urdu / Hindustani**[^2]
+
+[^2]: I started collecting some Hindustani vocabulary that might interest you: <https://www.are.na/harsh/hindustani-hindi-urdu-vocab>
+
+1.  [बकर पुराण](https://www.goodreads.com/book/show/60481996?ac=1&from_search=true&qid=hbs1F5CER1&rank=1) by अजीत भारती
+2.  [Short Stories](https://www.rekhta.org/prose/manto-s-20-greatest-short-stories) by Saadat Hasan Manto\*
+
+## Poems
+
+1.  [If](https://www.poetryfoundation.org/poems/46473/if---) by Rudyard Kipling\*
+2.  [Geetanjali](https://www.gutenberg.org/ebooks/7164) by Rabindranath Tagore\*
+3.  [Howl](https://www.poetryfoundation.org/poems/49303/howl) by Allen Ginsberg\* (Especially [this part](https://arc.net/l/quote/fveimwqs).)
+4.  I've an [Are.na channel](https://www.are.na/harsh/poems-7bol1j3i9mw) for this.
+
+## Long Reads
+
+**Story Books (Fiction/Historical Fiction)**
+
+1.  [Cuckold](https://www.amazon.com/Cuckold-Kiran-Nagarkar/dp/8172232578) by Kiran Nagarkar
+2.  [The Sense of an Ending](https://www.goodreads.com/book/show/10746542-the-sense-of-an-ending) by Julian Barnes
+3.  [The Humans](https://www.amazon.com/Humans-Novel-Matt-Haig/dp/1476730598) by Matt Haig
+4.  [Kafka on The Shore](https://www.goodreads.com/en/book/show/4929) by Haruki Murakami
+
+**Non-Fiction**
+
+1.  [City of Djinns](https://bookshelf.so/harsh17/city-of-djinns-a-year-in-delhi) by William Dalrymple
+
+**Wisdom**
+
+1.  [Panchatantra by Vishnusharma](https://nilanjanaroy.com/2018/06/05/travelling-tales-the-panchatantra/) (Translated by Nilanjana S. Roy)
+2.  [21 Lessons for the 21st Century](https://www.amazon.com/Lessons-21st-Century-Yuval-Harari/dp/0525512179) by Yuval Noah Harari
+3.  [Dhammapada](https://www.amazon.com/Dhammapada-Translation-Buddhist-Classic-Annotations/dp/1590303806) (Buddha's Poems, Translated by Gil Fronsdal) [Audio-version](https://www.insightmeditationcenter.org/books-articles/dhammapada/)
+4.  [The Art of Living](https://cicp.org.kh/wp-content/uploads/2021/02/Art-of-Living-in-English.pdf) (on Vipassana) by William Hart\*
+5.  [The Almanack of Naval Ravikant](https://www.navalmanack.com/) by Eric Jorgenson\*
+6.  [The Richest Man in Babylon](https://www.are.na/harsh/poems-7bol1j3i9mw) by George S. Clason
+
+# Listen 🎧
+
+## Podcasts
+
+[The Empire](https://open.spotify.com/show/0sBh58hSTReUQiK4axYUVx) podcast covers the British Empire, Roman Empire, Ashoka's Empire, etc., and their impact on India and Asia.
+The episodes are phenomenal, detailed, and cover aspects of history that I had no clue about!
+I've written about [Warren Hastings](https://blog.harsh17.in/warren-hastings/) and [Robert Clive](https://blog.harsh17.in/battle-of-palassey/) based on what I listened to here.
+I'd recommend the first seven episodes in a row about the [East India Company](https://open.spotify.com/episode/5PzZJyc4xhV578ISnLC8dc?si=234e3d2169d44890), [1857 rebellion](https://open.spotify.com/episode/3Ezg2VX3Ou96BVsK0aQl7y?si=9c7b942df5414d0c), [Gandhi](https://open.spotify.com/episode/6e0lQp7P1s7tJ2wQ0JESBe?si=2297f9a73d024b81)[^3], [Jinnah](https://open.spotify.com/episode/4oT2ew1YbE8IemZeI8mEr1?si=fcae51bebae94426) (Founding Father of Pakistan), [Mountbatten](https://open.spotify.com/episode/1jMCP4BpfSzkfQtiyETEt6?si=4a42ee2acf074fe4) (Last Viceroy of India), and [Partition of India and birth of Pakistan](https://open.spotify.com/episode/51M9szI5FjBXGyUgAh4BMZ?si=3f44047aef0644df).
+
+[^3]: On a sidenote, I've never respected anyone more than Mahatma Gandhi.
+    No one has valued truth and the personal search for it through experiments like him.
+    No one before him, and no one since him.
+
+## Audiobooks
+
+[Gilgamesh's Audiobook](https://www.audible.com/pd/Gilgamesh-Audiobook/B002UZJRRA) translated by Stephen Mitchell (an excellent translator by the way[^4]) and recited by George Guidall is so good.
+
+[^4]: Someone says "all translations are opinionated".
+    Then I guess what I'm saying is our opinions match.
+
+# Watch 📽️
+
+## Series
+
+**Apple TV+**
+
+1.  Severance (What if you separated your work half from the other half?)
+2.  Prehistoric Planet (An unreal documentary on dinosaurs)
+3.  Extrapolations (What if we breach the 1.5 °C temperature goal, imagined from NYC, SF, Mumbai, and more)
+
+**Netflix**
+
+1.  Three Body Problem (A very good Sci-Fi series based on a Chinese novel)
+2.  Thermae Romae Novae (A Roman bath architect time-travels to modern Japan for inspiration, an anime)
+
+------------------------------------------------------------------------
+
+Link to this list: <https://blog.harsh17.in/read-listen-watch>
