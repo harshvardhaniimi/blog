@@ -199,6 +199,8 @@ More species are going extinct in Asia than elsewhere.[^7]
 [^7]: Pimm SL, Jenkins CN, Abell R, Brooks TM, Gittleman JL, Joppa LN, Raven PH, Roberts CM, Sexton JO (30 May 2014).
     "[The biodiversity of species and their rates of extinction, distribution, and protection](https://static.squarespace.com/static/51b078a6e4b0e8d244dd9620/t/538797c3e4b07a163543ea0f/1401395139381/Pimm+et+al.+2014.pdf)"
 
+![](images/extinction-rate.png)
+
 This likely started with megafauna (large mammals) extinction around 50,000 years ago, which continued till around 12,000 years ago when wolly mammoth became extinct.
 Human hunting and competition from other mammals were a large reason for their degrowth.
 
