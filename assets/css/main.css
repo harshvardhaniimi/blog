@@ -98,26 +98,26 @@ ul {
 
 ul li {
   text-indent: -2ch;
-  font-family: 'Fira Sans';
+  font-family: 'Ubuntu';
   font-size: 16px;
 }
 
 ul > li::before {
   content: '🌻 ';
-  font-family: 'Fira Sans';
+  font-family: 'Ubuntu';
   color: var(--maincolor);
-  font-size: 0.9em;
+  font-size: 16px;
 }
 
 /* Ordered lists */
 ol {
-  font-family: 'Fira Sans';
+  font-family: 'Ubuntu';
   font-size: 16px;
 }
 
 /* Images */
 img {
-  border: 3px solid #ececec;
+  /* border: 3px solid #ececec; */
   max-width: 100%;
 }
 
@@ -195,8 +195,8 @@ header .main {
   font-size: 1.7rem;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Playwrite ES Deco';
-  font-size: 1.3rem;
+  font-family: 'Ubuntu';
+  font-size: 1.5rem;
   margin-top: 2em;
 }
 

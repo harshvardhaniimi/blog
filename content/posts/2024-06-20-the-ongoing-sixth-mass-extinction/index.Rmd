@@ -1,13 +1,13 @@
 ---
 title: The Ongoing Sixth Mass Extinction
 author: Harshvardhan
-date: '2024-06-20'
+date: '2024-07-19'
 slug: the-ongoing-sixth-mass-extinction
 categories:
   - blog
   - history
 tags: []
-draft: yes
+draft: no
 ---
 
 Estimating the total number of species that have ever existed on Earth is highly challenging due to the vast diversity and complexity of life.
@@ -100,7 +100,7 @@ A ten-second burst destroyed half of Earth's ozone layer[^6], leaving surface-dw
 
 [^6]: Ozone (O3) + Gamma Ray = Oxygen (O2) + Oxygen Free Radical (O+)
 
--   **Causes**: Severe ice age, falling sea levels, possible gamma-ray burst.
+-   **Causes**: Severe ice age, falling sea levels, possible gamma-ray burst; followed by glaciers melting and rapid warming phase.
 -   **Impact**: About 85% of marine species went extinct.
 -   **Examples of Extinct Species**: Many brachiopods, bryozoans, and trilobites.
 -   **Timeline**: Occurred over a period of about 1 million years.
@@ -147,8 +147,12 @@ Again, these events led to increase in atmospheric CO2, [acidification](https://
 CAMP also increased the amount of toxic mercury, killing many by mercury poisoning.
 
 This extinction also cleared a lot of land space, paving the way for dinosaurs to be the apex predators of the planet.
+Some species of dinosaurs went extinct, but most lived on to be at the top of the food chain.
+
 This extinction event is also quite similar in nature to Anthropocene extinction.
 If human-induced climate changes --- increased carbon dioxide levels, ocean acidification, and ocean deoxygenation --- persists as is, predictions can be made as to how various aspects of the biosphere will respond based on these records.
+
+![](images/triassic.jpg)
 
 -   **Causes**: Likely volcanic activity, climate change, and rising sea levels.
 -   **Impact**: Around 80% of species went extinct.
@@ -157,7 +161,24 @@ If human-induced climate changes --- increased carbon dioxide levels, ocean acid
 
 ## 5. Cretaceous-Paleogene Extinction (approx. 66 million years ago)
 
-The fifth mass extinction was
+The fifth mass extinction was triggered by a massive asteroid impact in Yucatán Peninsula, present day southeast Mexico, creating [Chicxulub crater](https://www.google.com/search?q=chicxulub+crate), named after the Mexican town where it was found (pictured below).
+This impact released enormous amounts of energy, causing fires, tsunamis, and a "nuclear winter" effect, where debris blocked sunlight, halting photosynthesis and drastically altering the climate.
+Oceans became significantly acidic which, obviously, affected marine life.
+Around the same time, volcanic eruptions in Deccan region of present day India also led to significant changes in global climate.
+
+![](images/chicxulub-crater.jpg)
+
+This mass extinction resulted in annihilation of approximately 75% of world's known species, including most dinosaurs, marine reptiles, and more.
+The extinction severely affected marine species, particularly those dependent on phytoplankton.
+Groups such as ammonites and many types of planktonic foraminifera were nearly wiped out.
+Only about [13% of species](https://www.worldatlas.com/articles/the-cretaceous-paleogene-extinction-event.html) that relied on marine phytoplankton survived.
+On land, the extinction was catastrophic for large vertebrates, including all non-avian dinosaurs.
+Birds, the only dinosaur lineage to survive, and mammals began to diversify and evolve rapidly in the aftermath.
+
+However, the extinction event also opened up evolutionary opportunities, leading to significant [adaptive radiation](https://en.wikipedia.org/wiki/Adaptive_radiation).
+In its aftermath, many groups rapidly diverged into new forms and species to fill the newly available ecological niches.
+Mammals, in particular, underwent extensive diversification, evolving into various forms including horses, whales, bats, and primates.
+The surviving dinosaurs were primarily those capable of flight, which evolved into the modern species of birds.
 
 -   **Causes**: Asteroid impact (Chicxulub crater), volcanic activity in the Deccan Traps, climate change.
 -   **Impact**: About 75% of species, including all non-avian dinosaurs, went extinct.
@@ -166,13 +187,60 @@ The fifth mass extinction was
 
 ## 6. Holocene/Anthropocene Extinction (current)
 
+> We are currently, in a systematic manner, exterminating all non-human living beings.
+>
+> --- [Anne Larigauderie](https://en.wikipedia.org/wiki/Anne_Larigauderie), IPBES, United Nations
+
+Holocene or Anthropocene mass extinction is the ongoing mass extinction (as I write!), caused by humans alone.
+Our activities have resulted in widespread degradation of biodiversity hotspots such as coral reefs and rainforests.
+E.g., coral reefs cover 0.1% of ocean floor but house over 25% of all marine species.
+The current rate of extinction is estimated to be 100 to 1000 times more than the natural background extinction rate.
+More species are going extinct in Asia than elsewhere.[^7]
+
+[^7]: Pimm SL, Jenkins CN, Abell R, Brooks TM, Gittleman JL, Joppa LN, Raven PH, Roberts CM, Sexton JO (30 May 2014).
+    "[The biodiversity of species and their rates of extinction, distribution, and protection](https://static.squarespace.com/static/51b078a6e4b0e8d244dd9620/t/538797c3e4b07a163543ea0f/1401395139381/Pimm+et+al.+2014.pdf)"
+
+This likely started with megafauna (large mammals) extinction around 50,000 years ago, which continued till around 12,000 years ago when wolly mammoth became extinct.
+Human hunting and competition from other mammals were a large reason for their degrowth.
+
+Like all facts that haven't become history yet, this ongoing extinction is still questioned by some scientists.
+I don't think you need convincing that we humans have irrevocably changed the ecology of the planet, but if you still doubt it, here's a [lot more evidence](https://ourworldindata.org/climate-change).
+
+<blockquote class="text-post-media" data-text-post-permalink="https://www.threads.net/@harsh17.in/post/C9DJ8VdOKLB" data-text-post-version="0" id="ig-tp-C9DJ8VdOKLB" style=" background:#FFF; border-width: 1px; border-style: solid; border-color: #00000026; border-radius: 16px; max-width:540px; margin: 1px; min-width:270px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);">
+
+<a href="https://www.threads.net/@harsh17.in/post/C9DJ8VdOKLB" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%; font-family: -apple-system, BlinkMacSystemFont, sans-serif;" target="_blank">
+
+::: {style=" padding: 40px; display: flex; flex-direction: column; align-items: center;"} ::: {style=" display:block; height:32px; width:32px; padding-bottom:20px;"} <svg aria-label="Threads" height="32px" role="img" viewBox="0 0 192 192" width="32px" xmlns="http://www.w3.org/2000/svg"> <path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z" /></svg> :::
+
+::: {style=" font-size: 15px; line-height: 21px; color: #999999; font-weight: 400; padding-bottom: 4px; "} Post by @harsh17.in :::
+
+::: {style=" font-size: 15px; line-height: 21px; color: #000000; font-weight: 600; "} View on Threads ::: :::
+
+</a>
+
+</blockquote>
+
+```{=html}
+<script async src="https://www.threads.net/embed.js"></script>
+```
 -   **Causes**: Human activities (habitat destruction, pollution, overhunting, climate change, invasive species).
 -   **Impact**: Estimated that species are going extinct at 100 to 1,000 times the natural background rate, with significant declines in biodiversity. The International Union for Conservation of Nature (IUCN) reports that over 26,000 species are threatened with extinction.
 -   **Examples of Extinct Species**: Passenger pigeon, Western black rhinoceros, various amphibians.
 -   **Timeline**: Ongoing, with accelerated rates of extinction over the past few centuries. The current rate suggests that around 1 million species could face extinction in the coming decades.
+
+## Concluding Thoughts
 
 You may notice that each extinction is happening more quickly than before: first and second took over a million years, third one 60,000 years, fourth one 10,000 years, fifth one only a few decades.
 Will the sixth (ongoing) will kill \>80% species in just a few years?
 
 The other interesting thing is that nature has routinely killed over 70% species in every mass extinction.
 Indeed, over 99% of all species (not organisms but individual species) have gone extinct over the course of Earth's history.
+But we (still) have so much diversity in life today.
+What would the world be like in a few million years?
+
+It has been well said that forests precede mankind; deserts follow.
+We love to say "save the planet" but actually, we are striving to "save ourselves".
+In the words of Lester Brown, "We have not inherited this earth from our forefathers; we have borrowed it from out children".[^8]
+
+[^8]: My first introduction to persuasive arguments, not scientific but gut wrenching and convincing, on climate change was Nani Palkhivala's "[The Ailing Planet: The Green Movement's Role](https://ncert.nic.in/textbook/pdf/kehb104.pdf)".
+    It was part of my NCERT textbook in Class 11, though originally published in *The Indian Express*.
