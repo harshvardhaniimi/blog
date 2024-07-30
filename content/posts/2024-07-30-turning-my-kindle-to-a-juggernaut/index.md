@@ -1,5 +1,5 @@
 ---
-title: Turning My Kindle to A Juggernaut
+title: "Jailbreaking: Turning My Kindle to A Juggernaut E-Reader"
 author: Harshvardhan
 date: '2024-07-30'
 slug: kindle
