@@ -105,7 +105,7 @@ Save this file inside `koreader\patches` folder.
 
 [Link to Are.na channel](https://www.are.na/harsh/book-shots).
 
-<iframe src="https://www.are.na/harsh/book-shots" width="800" height="600" frameborder="0" allowfullscreen>
+<iframe src="https://www.are.na/harsh/book-shots" frameborder="0" allowfullscreen>
 
 </iframe>
 
@@ -113,6 +113,6 @@ Save this file inside `koreader\patches` folder.
 
 All related resources are in [this links folder](https://arc.net/folder/1DC73A1C-574D-4E88-86B7-5D655EB09F9E).
 
-<iframe src="https://arc.net/folder/1DC73A1C-574D-4E88-86B7-5D655EB09F9E" width="800" height="600" frameborder="0" allowfullscreen>
+<iframe src="https://arc.net/folder/1DC73A1C-574D-4E88-86B7-5D655EB09F9E" frameborder="0" allowfullscreen>
 
 </iframe>
