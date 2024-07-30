@@ -2,7 +2,7 @@
 title: Turning My Kindle to A Juggernaut
 author: Harshvardhan
 date: '2024-07-30'
-slug: turning-my-kindle-to-a-juggernaut
+slug: kindle
 categories:
   - book
   - coding
