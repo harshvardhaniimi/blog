@@ -11,13 +11,27 @@ categories:
 tags: []
 ---
 
-When I first learnt linear regression six years ago, I was surprised by its power. I could know the effect of one phenomenon on another and the extent of the relationship. As years passed by, I revisited its different parts in pieces. Stability. Consistency. Precision. R Squared. The list goes on.
+When I first learnt linear regression six years ago, I was surprised by its power.
+I could know the effect of one phenomenon on another and the extent of the relationship.
+As years passed by, I revisited its different parts in pieces.
+Stability.
+Consistency.
+Precision.
+R Squared.
+The list goes on.
 
-Sometime in the past, I decided to compile all I had learnt about linear regression. However, such massive projects never see fruition. [In my MBA, Prof Amlesh Sharma](https://mays.tamu.edu/directory/as19/) from Texas A&M taught this in his Advanced Marketing Analytics class; I didn't find this technique elsewhere. Using this simple trick, you can decide the optimal value for input to produce the maximum output.
+Sometime in the past, I decided to compile all I had learnt about linear regression.
+However, such massive projects never see fruition. 
+[In my MBA, Prof Amlesh Sharma](https://mays.tamu.edu/directory/as19/) from Texas A&M taught this in his Advanced Marketing Analytics class; I didn't find this technique elsewhere.
+Using this simple trick, you can decide the optimal value for input to produce the maximum output.
 
 # Formulation
 
-At its heart, linear regression is fitting a straight line in the existing data so that the line is closest to the points. We solve the optimisation problem to minimise the distance between the regression line and the actual observation. This approach is called "loss minimisation". Another popular method is to "maximise likelihood". Explanation of these methods is beyond the scope of this article.
+At its heart, linear regression is fitting a straight line in the existing data so that the line is closest to the points.
+We solve the optimisation problem to minimise the distance between the regression line and the actual observation.
+This approach is called "loss minimisation".
+Another popular method is to "maximise likelihood".
+Explanation of these methods is beyond the scope of this article.
 
 # Variables
 
@@ -27,7 +41,8 @@ At its heart, linear regression is fitting a straight line in the existing data 
 
 # Case Study: Number of Golf Courses
 
-There is a strong theoretical reason to believe that the number of golf courses in a state would depend on climate, population, per capita income and popularity. Consider a simple case where you know only the people of the state and the number of golf courses in that state.
+There is a strong theoretical reason to believe that the number of golf courses in a state would depend on climate, population, per capita income and popularity.
+Consider a simple case where you know only the people of the state and the number of golf courses in that state.
 
 The linear model to find the number of gold courses can be written as the following.
 
@@ -43,7 +58,8 @@ Let's check it.
 
 ### Data
 
-Data on golf courses by US state is available at this [website](https://www.bls.gov/opub/ted/2018/golf-anyone-a-look-at-golf-courses-and-country-clubs-by-state.htm). I scrapped it into a `.CSV` file available [here](https://www.harsh17.in/using-linear-regression-to-find-optimal-value/data/golf.csv).
+Data on golf courses by US state is available at this [website](https://www.bls.gov/opub/ted/2018/golf-anyone-a-look-at-golf-courses-and-country-clubs-by-state.htm).
+I scrapped it into a `.CSV` file available [here](https://www.harsh17.in/using-linear-regression-to-find-optimal-value/data/golf.csv).
 
 ```{r, include = FALSE}
 theme_h = function(base_size = 14) {
@@ -71,7 +87,6 @@ theme_h = function(base_size = 14) {
 }
 ```
 
-
 ```{r}
 library(tidyverse)
 theme_set(theme_h())
@@ -80,14 +95,17 @@ golf = read.csv("https://www.harsh17.in/using-linear-regression-to-find-optimal-
 golf
 ```
 
-Population of each US state is available on this [website](https://worldpopulationreview.com/states). I downloaded the `.CSV` file available from there ([click here](https://www.harsh17.in/using-linear-regression-to-find-optimal-value/data/state_population.csv) to download).
+Population of each US state is available on this [website](https://worldpopulationreview.com/states).
+I downloaded the `.CSV` file available from there ([click here](https://www.harsh17.in/using-linear-regression-to-find-optimal-value/data/state_population.csv) to download).
 
 ```{r}
 population = read.csv("https://www.harsh17.in/using-linear-regression-to-find-optimal-value/data/state_population.csv") %>% as_tibble()
 population
 ```
 
-Note that there is a timeline mismatch. Golf course data is from 2017, and population data is from 2021. However, since the purpose of this article is to show linear regression-based optimisation and not an actual world application --- it's acceptable.
+Note that there is a timeline mismatch.
+Golf course data is from 2017, and population data is from 2021.
+However, since the purpose of this article is to show linear regression-based optimisation and not an actual world application --- it's acceptable.
 
 ### Wrangling Data
 
@@ -115,7 +133,10 @@ df %>%
   geom_point(alpha = 0.5, show.legend = FALSE)
 ```
 
-So there is a straightforward pattern that as the population increases, the number of golf courses increases. However, the variance also increases with population. When the population is around 20 million, golf courses can be about 600 or 800. There will likely be heteroskedasticity problems because of dependent variance if we directly apply a linear model.
+So there is a straightforward pattern that as the population increases, the number of golf courses increases.
+However, the variance also increases with population.
+When the population is around 20 million, golf courses can be about 600 or 800.
+There will likely be heteroskedasticity problems because of dependent variance if we directly apply a linear model.
 
 # Optimisation
 
@@ -133,20 +154,24 @@ $$
 \frac{dY}{dX} = b + 2cX
 $$
 
-For the optimal value --- minimum or maximum --- we will set the first order condition to zero. Thus,
+For the optimal value --- minimum or maximum --- we will set the first order condition to zero.
+Thus,
 
 $$
 X = \frac{-b}{2c}.
 $$
 
-Whether it will give us minima or maxima will depend on sign of $\frac{d^2Y}{dX^2} = 2c$, i.e. sign of $c$. So, let's first estimate the model and see what we get.
+Whether it will give us minima or maxima will depend on sign of $\frac{d^2Y}{dX^2} = 2c$, i.e. sign of $c$.
+So, let's first estimate the model and see what we get.
 
 ```{r}
 fit = lm(Establishments ~ Pop2021 + I(Pop2021^2), data = df)
 summary(fit)
 ```
 
-We see that $c = -7.6 \times 10^{-13}$, which is negative. Thus, the value we get from $X = \frac{-b}{2c}$ will be maximiser. At that population, we would have the maximum number of golf courses.
+We see that $c = -7.6 \times 10^{-13}$, which is negative.
+Thus, the value we get from $X = \frac{-b}{2c}$ will be maximiser.
+At that population, we would have the maximum number of golf courses.
 
 Let's calculate that critical value.
 
@@ -164,7 +189,8 @@ How many golf courses we will have in that case?
 (Y = cc %*% c(1, X, X^2))
 ```
 
-It will have around 694 golf courses. This looks like a correct answer from the plot as well.
+It will have around 694 golf courses.
+This looks like a correct answer from the plot as well.
 
 ```{r}
 df %>% 
