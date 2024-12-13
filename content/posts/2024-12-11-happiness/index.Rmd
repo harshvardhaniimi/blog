@@ -1,5 +1,5 @@
 ---
-title: Happiness
+title: "Happiness: What makes us happy?"
 author: Harshvardhan
 date: '2024-12-11'
 slug: happiness
@@ -15,9 +15,11 @@ draft: no
 
 If you want to test your knowledge about happiness around the world, try this quiz I made based on [World Happiness Report 2024](https://worldhappiness.report/).
 
-Quiz: <https://happiness-quiz.netlify.app/>
+Link to Quiz (10 questions, 5 mins activity): <https://happiness-quiz.netlify.app/>
 
----
+------------------------------------------------------------------------
+
+## What makes us happy?
 
 One of the early realizations of my life was that happiness depends more on perspectives than circumstances.
 A wise person would strive for a perspective that brings them happiness.
@@ -44,7 +46,8 @@ Sociocultural factors like status and role in society do have an impact on happi
 Some claim money brings happiness, and that's true---but only to a certain extent.
 Someone earning \$150,000 isn't necessarily happier than someone earning \$100,000.[^2]
 
-[^2]: The actual number seems to be somewhere between \$75,000 to \$100,000 beyond which money becomes less important in happiness. See [Does Money Buy Happiness? Here’s What the Research Says](https://knowledge.wharton.upenn.edu/article/does-money-buy-happiness-heres-what-the-research-says/).
+[^2]: The actual number seems to be somewhere between \$75,000 to \$100,000 beyond which money becomes less important in happiness.
+    See [Does Money Buy Happiness? Here's What the Research Says](https://knowledge.wharton.upenn.edu/article/does-money-buy-happiness-heres-what-the-research-says/).
 
 However, biologists insist that if happiness is measured as pleasure, it is determined by the chemical composition of balance of three biochemicals: oxytocin, dopamine, and serotonin.
 
@@ -105,9 +108,12 @@ Of course, these are two good questions but neither is perfect, because there is
 
 ------------------------------------------------------------------------
 
+## What makes me happy?
+
 We've established that representing happiness, both biologically and in survey design, remains elusive.
 
 Therefore, I hypothesize: perspectives that make us happy require objective, unbiased, patient, and persistent observation.
+In other words, it requires observation of reality as it is, not as we would like it to be.
 A story from Buddha's life illustrates this: On a cold winter night, Siddhartha Gautama, dressed in rags, was asked how he seemed so cheerful despite the harsh weather.
 Buddha replied that suffering does not come from the cold or the wind but from the mind.
 True contentment, he said, doesn't depend on circumstances but on understanding the nature of the mind.
@@ -135,10 +141,15 @@ Indeed, as [Meenal](https://meenalsingh.substack.com/p/what-is-being-alive) says
 > There are no ups without downs.
 > It just becomes a plain never-ending vast surface.
 
+Striving to know what makes me happy has always been important to me, maybe because my name Harsh (हर्ष) means happiness in Sanskrit/Hindi.
+Harshvardhan (हर्षवर्धन) means one who increases happiness.
+
 Anyway, thanks for coming to my TED Talk.
 Maybe you'll decide to find what makes *you* happy---or maybe not, but please do.
 Because more likely than not, it is different from everyone else in the world.
 In any case, I hope we've learned a thing or two about happiness.
+
+------------------------------------------------------------------------
 
 ## Some Fun Facts from World Happiness Survey
 
@@ -151,5 +162,3 @@ In any case, I hope we've learned a thing or two about happiness.
 1.  [How they find the "happiest" country on Earth, YouTube](https://www.youtube.com/watch?v=eg1--c2r8HE)
 2.  [Happiness and Life Satisfaction by Our World in Data](https://ourworldindata.org/happiness-and-life-satisfaction)
 3.  [World Happiness Report, 2024](https://worldhappiness.report/ed/2024/)
-
--- Harsh
