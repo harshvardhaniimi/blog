@@ -15,7 +15,7 @@ draft: no
 
 If you want to test your knowledge about happiness around the world, try this quiz I made based on [World Happiness Report 2024](https://worldhappiness.report/).
 
-Quiz: <https://fascinating-centaur-2c7996.netlify.app/>
+Quiz: <https://happiness-quiz.netlify.app/>
 
 ---
 
