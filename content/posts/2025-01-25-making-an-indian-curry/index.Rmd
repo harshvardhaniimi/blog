@@ -1,0 +1,194 @@
+---
+title: Making an Indian Curry
+author: Harshvardhan
+date: '2025-01-25'
+slug: making-an-indian-curry
+categories:
+  - india
+  - cooking
+tags: []
+draft: no
+---
+
+Some friends of mine asked me how to make Indian curries. We Indians are
+good at it; we make many types of Sabzi सब्ज़ी that non-Indians simply
+call "curry". Sabzi literally means vegetables. Today, I'm excited to
+share a versatile curry recipe that's perfect for anyone looking to
+explore Indian cooking.
+
+The recipe is a template or a base recipe. You can use it with any
+vegetable of your preference or even Chicken (but cooking Chicken will
+take longer to remember to adjust for that).
+
+Also know that this is a home cooked curry, not something you would find
+in an Indian restaurants. Thus, please don't compare it with what you
+see in Indian menu. Parts of it I learnt from watching my mother cook,
+and rest from six years of cooking.
+
+## The Heart of Good Sabzi
+
+The beauty of Indian curry lies in its foundation --- an aromatic base
+for vegetables to be fried into, and then turned into the curry. The
+vegetable (Sabzi) could be cauliflower (Gobi) resulting in Gobi Sabzi;
+eggplant/brinjal (Baigan Sabzi); mushrooms (Mushroom Sabzi);
+okra/ladyfingers (Bhindi Sabzi); or even a mixture of them (Mix Sabzi or
+Mix Veg).
+
+Let's start with what you'll need. Don't worry if the ingredient list
+seems long -- most of these items can be found in your local grocery
+store, and the rest are worth a special trip to an Indian market. Trust
+me, your taste buds will thank you!
+
+### Your Shopping List
+
+For the aromatic base, gather:
+
+1.  2-3 tablespoons of your preferred cooking oil[^1]
+2.  2 teaspoons each of cumin and mustard seeds
+3.  One large onion, finely chopped
+4.  4-5 cloves of garlic and half-thumb size of ginger, chopped (or a
+    tablespoon of ginger garlic paste)
+5.  Two medium tomatoes
+6.  Two medium potatoes
+7.  Fresh green chilies (adjust based on your spice tolerance, 1 for
+    low, 3-5 for high)
+8.  Fresh cilantro for that final touch
+9.  Salt to taste
+
+[^1]: Different cooking oil have slightly different taste. If you are
+    unsure, choose refined vegetable oil. Don't use seseme seed oil.
+    Mustard oil will have a strong smell. You can use butter or ghee but
+    you may need a lot; I'll recommend pairing up with some oil if you
+    use butter or ghee.
+
+**Masala (Spices)**
+
+1.  Turmeric (Haldi): Gives curry its signature golden color and has
+    anti-inflammatory properties
+2.  Garam Masala: A warming blend of ground spices, essential for most
+    Indian dishes
+3.  Red Chili Powder: Adds heat and color (start with less if you're
+    sensitive to spice)
+
+Additionally, you should get some spice mix. Traditional homes don't use
+them but they're necessary unless you know what proportion of ten
+different spices to use every single time. MDH or Everest are good
+brands for spice mix (found in Indian stores).
+
+-   **MDH/Everest Sabzi Masala**: Perfect for vegetable dishes
+-   **Kitchen King by MDH:** A versatile blend that enhances any curry's
+    flavor
+
+Don't feel restricted by the labels---you can use Biryani masala in
+curry; off-label usage is okay. You can mix different masalas to create
+your own unique flavor profiles.
+
+**Recommended Combination**
+
+-   For basic curry: Turmeric + Garam Masala +Sabzi Masala
+-   For extra flavor: Add Kitchen King to the basic combination
+-   For heat lovers: Add extra red chili powder any combination
+
+Remember: Start with small amounts of masala and add more to taste - you
+can always add, but you can't subtract!
+
+## Choose Your Main Vegetable(s)
+
+You can use zero, one or multiple vegetables. Each vegetable has its own
+taste. Using no vegetable would be Tamatar-Aloo Sabzi or (Tomato-Potato
+Curry).
+
+-   Cauliflower: 1 medium head, cut into florets
+-   Eggplant: 2 medium, cubed
+-   Mixed vegetables: 2-3 cups of your choice
+-   Mushrooms: 8-10 oz, quartered
+-   Bell peppers: 1-2, chopped
+
+## Instructions
+
+### Base Curry Preparation
+
+1.  Heat oil in a large pan over medium heat.
+2.  Once hot, add cumin and mustard seeds. Wait for them to sputter
+    (about 30 seconds).
+3.  Add chopped onions. Cook until translucent (5-7 minutes).
+4.  Add ginger and garlic. Sauté for 2 minutes.
+5.  Add turmeric powder and stir for 30 seconds. Important: Add turmeric
+    before water as it needs to cook in oil (in any cooking).
+6.  Add garam masala and other dry spices. Stir for 1 minute.
+7.  Add tomatoes, potatoes and chopped green chillies. Add salt. Cook
+    until tomatoes soften (5 minutes).
+8.  Add your chosen vegetable(s).
+
+### Cooking Process
+
+9.  Monitor moisture levels:
+
+```{=html}
+<!-- -->
+```
+a.  If too dry: Add small amounts of water (1/4 cup at a time)
+b.  If too wet: Cook uncovered until excess water evaporates
+
+```{=html}
+<!-- -->
+```
+10. Alternate between covered and uncovered cooking:
+
+```{=html}
+<!-- -->
+```
+a.  Cover to help vegetables release water and steam
+b.  Uncover to reduce liquid and intensify flavors
+
+```{=html}
+<!-- -->
+```
+11. Cook until vegetables reach desired tenderness (15-20 minutes).
+12. Garnish with fresh cilantro.
+
+## Pro-Tips
+
+1.  Spice Adjustment:
+
+    -   Start with less spice; you can always add more. If you want to
+        add more spices after adding water to the curry, you can do that
+        in the Tadka (described below) or heating the spices first in
+        some oil.
+    -   Taste frequently and adjust seasonings. You will get better with
+        time.
+
+2.  Tadka (Final Flavor Boost):
+
+    1.  Heat 2 tablespoons ghee or oil in a small pan
+
+    2.  Add 2-3 dried red chilies
+
+    3.  Add 1 teaspoon cumin seeds
+
+    4.  Add 1/2 teaspoon red chili powder
+
+    5.  When spices sputter, pour over finished curry
+
+## Consistency in Curry Thickness
+
+Different people have different preferences in the dryness of their
+curry. Some like dry curries (good for eating with bread) while others
+like watery curry (good with rice).
+
+-   For dry curry: Use minimal water and cook uncovered
+-   For gravy: Add more water and simmer covered
+-   Ideal consistency: Vegetables should be well-coated with thick gravy
+
+## Final Remarks and Troubleshooting Tips
+
+As long as you follow the basic recipe, there is very less chance of
+getting something wrong. But remember, it is okay to make mistakes and
+its likely you will make mistakes. But those mistakes will teach you how
+to cook better.
+
+The most important ingredient in cooking is time. Remember not to hurry
+or be too late. Some people hurry up in adding water before the veggies
+are well fried in spices. Some delay in stirring and the vegetable burns
+and sticks to the bottom. In that case, add some water and then stir
+instead of stirring dry.

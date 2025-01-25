@@ -16,4 +16,5 @@ AutoAppendNewline: Yes
 
 BuildType: Website
 
-MarkdownWrap: Sentence
+MarkdownWrap: Column
+MarkdownWrapAtColumn: 72
