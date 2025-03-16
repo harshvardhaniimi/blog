@@ -11,7 +11,7 @@ ignoreErrors: ["error-missing-instagram-accesstoken"]
 permalinks: 
   posts: "/:slug/"
 params:
-  mode: toggle
+  mode: "light"
   social:
     - icon: linkedin
       name: LinkedIn
