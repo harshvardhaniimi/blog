@@ -1,0 +1,319 @@
+<!-- Add this to your HTML, ideally right after the opening body tag -->
+<canvas id="pixelArtCanvas"></canvas>
+
+<style>
+  #pixelArtCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Ensure it's behind your content */
+    opacity: 0.2; /* Subtle enough not to interfere with reading */
+    pointer-events: none; /* So it doesn't interfere with clicks */
+  }
+  
+  /* Make sure your content container has a higher z-index */
+  .content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const canvas = document.getElementById('pixelArtCanvas');
+    const ctx = canvas.getContext('2d');
+    
+    // Make canvas full screen with proper pixel ratio
+    function resizeCanvas() {
+      const dpr = window.devicePixelRatio || 1;
+      canvas.width = window.innerWidth * dpr;
+      canvas.height = window.innerHeight * dpr;
+      ctx.scale(dpr, dpr);
+      canvas.style.width = window.innerWidth + 'px';
+      canvas.style.height = window.innerHeight + 'px';
+    }
+    
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+    
+    // Colors
+    const colors = {
+      sky: '#e6f7ff',
+      cloud: '#ffffff',
+      cloudShadow: '#e6e6e6',
+      rain: '#b3d9ff',
+      grass: '#99cc99',
+      tree: '#336633',
+      treeShadow: '#225522',
+      animal1: '#cc9966', // goat
+      animal2: '#ff6633'  // chicken
+    };
+    
+    // Pixel size (how blocky the art should be)
+    const pixelSize = 4;
+    
+    // Create clouds
+    const clouds = [];
+    const numClouds = 5;
+    
+    for (let i = 0; i < numClouds; i++) {
+      clouds.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height * 0.2, // Top 20% of screen
+        width: 30 + Math.random() * 50,
+        height: 15 + Math.random() * 15,
+        speed: 0.2 + Math.random() * 0.3
+      });
+    }
+    
+    // Create raindrops
+    const raindrops = [];
+    const maxRaindrops = 100;
+    
+    function createRaindrop() {
+      if (raindrops.length < maxRaindrops && Math.random() > 0.95) {
+        const cloudIndex = Math.floor(Math.random() * clouds.length);
+        const cloud = clouds[cloudIndex];
+        
+        raindrops.push({
+          x: cloud.x + Math.random() * cloud.width,
+          y: cloud.y + cloud.height,
+          speed: 1 + Math.random() * 2,
+          length: 5 + Math.random() * 10
+        });
+      }
+    }
+    
+    // Create trees
+    const trees = [];
+    const numTrees = 7;
+    
+    for (let i = 0; i < numTrees; i++) {
+      trees.push({
+        x: Math.random() * canvas.width,
+        y: canvas.height - (20 + Math.random() * 40),
+        size: 10 + Math.random() * 15
+      });
+    }
+    
+    // Create animals (goats and chickens)
+    const animals = [];
+    const numAnimals = 5;
+    
+    for (let i = 0; i < numAnimals; i++) {
+      animals.push({
+        x: Math.random() * canvas.width,
+        y: canvas.height - (5 + Math.random() * 15),
+        type: Math.random() > 0.5 ? 'goat' : 'chicken',
+        size: 5 + Math.random() * 5,
+        speed: 0.1 + Math.random() * 0.3,
+        direction: Math.random() > 0.5 ? 1 : -1,
+        moveCounter: 0,
+        moveThreshold: 100 + Math.random() * 200
+      });
+    }
+    
+    // Draw functions
+    function drawCloud(x, y, width, height) {
+      ctx.fillStyle = colors.cloudShadow;
+      
+      // Draw cloud shape with individual "pixels"
+      for (let i = 0; i < width; i += pixelSize) {
+        for (let j = 0; j < height; j += pixelSize) {
+          // Create a cloud-like shape using a simple algorithm
+          const distFromCenter = Math.abs(i - width/2) + Math.abs(j - height/2);
+          if (distFromCenter < width * 0.4 || (Math.random() > 0.7 && distFromCenter < width * 0.6)) {
+            ctx.fillRect(
+              Math.floor(x + i), 
+              Math.floor(y + j), 
+              pixelSize, 
+              pixelSize
+            );
+          }
+        }
+      }
+      
+      // Draw white parts slightly offset to create dimension
+      ctx.fillStyle = colors.cloud;
+      for (let i = 0; i < width - pixelSize; i += pixelSize) {
+        for (let j = 0; j < height - pixelSize; j += pixelSize) {
+          const distFromCenter = Math.abs(i - width/2) + Math.abs(j - height/2);
+          if (distFromCenter < width * 0.4 || (Math.random() > 0.7 && distFromCenter < width * 0.6)) {
+            ctx.fillRect(
+              Math.floor(x + i), 
+              Math.floor(y + j), 
+              pixelSize, 
+              pixelSize
+            );
+          }
+        }
+      }
+    }
+    
+    function drawRaindrop(x, y, length) {
+      ctx.fillStyle = colors.rain;
+      ctx.fillRect(Math.floor(x), Math.floor(y), pixelSize, length);
+    }
+    
+    function drawTree(x, y, size) {
+      // Tree trunk
+      ctx.fillStyle = '#8B4513'; // Brown
+      ctx.fillRect(
+        Math.floor(x - size/6), 
+        Math.floor(y - size), 
+        Math.floor(size/3), 
+        Math.floor(size)
+      );
+      
+      // Tree foliage (triangular)
+      ctx.fillStyle = colors.treeShadow;
+      for (let i = 0; i < size * 2; i += pixelSize) {
+        for (let j = 0; j < size * 1.5; j += pixelSize) {
+          // Create triangle shape
+          if (j < size * 1.5 - (i * size * 1.5) / (size * 2)) {
+            ctx.fillRect(
+              Math.floor(x - size + i), 
+              Math.floor(y - size * 1.5 + j), 
+              pixelSize, 
+              pixelSize
+            );
+          }
+        }
+      }
+      
+      // Lighter part
+      ctx.fillStyle = colors.tree;
+      for (let i = 0; i < size * 2 - pixelSize; i += pixelSize) {
+        for (let j = 0; j < size * 1.5 - pixelSize; j += pixelSize) {
+          // Create triangle shape
+          if (j < size * 1.5 - (i * size * 1.5) / (size * 2)) {
+            ctx.fillRect(
+              Math.floor(x - size + i), 
+              Math.floor(y - size * 1.5 + j), 
+              pixelSize, 
+              pixelSize
+            );
+          }
+        }
+      }
+    }
+    
+    function drawAnimal(x, y, type, size, direction) {
+      if (type === 'goat') {
+        ctx.fillStyle = colors.animal1;
+        
+        // Body
+        ctx.fillRect(Math.floor(x), Math.floor(y - size), size * 2, size);
+        
+        // Head
+        ctx.fillRect(
+          Math.floor(x + (direction > 0 ? size * 1.5 : -size * 0.5)), 
+          Math.floor(y - size * 1.5), 
+          size, 
+          size
+        );
+        
+        // Legs
+        ctx.fillRect(Math.floor(x + size * 0.25), Math.floor(y), size * 0.5, size);
+        ctx.fillRect(Math.floor(x + size * 1.25), Math.floor(y), size * 0.5, size);
+      } else {
+        // Chicken
+        ctx.fillStyle = colors.animal2;
+        
+        // Body (oval shape)
+        ctx.fillRect(Math.floor(x), Math.floor(y - size * 0.75), size * 1.5, size * 0.75);
+        
+        // Head
+        ctx.fillRect(
+          Math.floor(x + (direction > 0 ? size : -size * 0.5)), 
+          Math.floor(y - size * 1.25), 
+          size * 0.75, 
+          size * 0.5
+        );
+        
+        // Legs
+        ctx.fillRect(Math.floor(x + size * 0.25), Math.floor(y), size * 0.25, size * 0.5);
+        ctx.fillRect(Math.floor(x + size * 0.75), Math.floor(y), size * 0.25, size * 0.5);
+      }
+    }
+    
+    function drawGrass() {
+      ctx.fillStyle = colors.grass;
+      for (let x = 0; x < canvas.width; x += pixelSize) {
+        const grassHeight = 5 + Math.random() * 5;
+        ctx.fillRect(x, canvas.height - grassHeight, pixelSize, grassHeight);
+      }
+    }
+    
+    // Animation loop
+    function animate() {
+      // Clear canvas with sky color
+      ctx.fillStyle = colors.sky;
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+      
+      // Draw grass
+      drawGrass();
+      
+      // Update and draw clouds
+      clouds.forEach(cloud => {
+        cloud.x += cloud.speed;
+        if (cloud.x > canvas.width) {
+          cloud.x = -cloud.width;
+        }
+        drawCloud(cloud.x, cloud.y, cloud.width, cloud.height);
+      });
+      
+      // Create new raindrops
+      createRaindrop();
+      
+      // Update and draw raindrops
+      for (let i = raindrops.length - 1; i >= 0; i--) {
+        const drop = raindrops[i];
+        drop.y += drop.speed;
+        drawRaindrop(drop.x, drop.y, drop.length);
+        
+        // Remove drops that hit the ground
+        if (drop.y > canvas.height) {
+          raindrops.splice(i, 1);
+        }
+      }
+      
+      // Draw trees
+      trees.forEach(tree => {
+        drawTree(tree.x, tree.y, tree.size);
+      });
+      
+      // Update and draw animals
+      animals.forEach(animal => {
+        animal.moveCounter++;
+        
+        // Random movement - change direction occasionally
+        if (animal.moveCounter > animal.moveThreshold) {
+          animal.direction *= -1;
+          animal.moveThreshold = 100 + Math.random() * 200;
+          animal.moveCounter = 0;
+        }
+        
+        // Move animal
+        animal.x += animal.speed * animal.direction;
+        
+        // Wrap around if animal goes off screen
+        if (animal.x > canvas.width + animal.size * 2) {
+          animal.x = -animal.size * 2;
+        } else if (animal.x < -animal.size * 2) {
+          animal.x = canvas.width + animal.size * 2;
+        }
+        
+        drawAnimal(animal.x, animal.y, animal.type, animal.size, animal.direction);
+      });
+      
+      requestAnimationFrame(animate);
+    }
+    
+    // Start animation
+    animate();
+  });
+</script>
