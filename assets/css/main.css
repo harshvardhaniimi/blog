@@ -58,7 +58,7 @@ html {
 body {
   display: block;
   margin: 8px;
-  font-family: Sumana, serif;
+  font-family: Laila, serif;
   font-weight: 400;
 }
 
@@ -73,7 +73,7 @@ body {
 
 /* Typography */
 p {
-  font-family: Sumana, serif;
+  font-family: Laila, serif;
   line-height: 1.5;
   font-size: 18px;
 }
@@ -124,7 +124,7 @@ blockquote {
   padding: 1em 1.5em;
   background: rgba(0,0,0,0.03);
   border-radius: 0 5px 5px 0;
-  font-family: Sumana, serif;
+  font-family: Laila, serif;
   font-style: italic;
 }
 
@@ -153,7 +153,7 @@ ul li {
   position: relative;
   padding-left: 1.5em;
   margin-bottom: 0.7em;
-  font-family: Sumana, serif;
+  font-family: Laila, serif;
   font-size: 18px;
   text-indent: 0;
   line-height: 1.4;
@@ -176,7 +176,7 @@ ol {
 }
 
 ol li {
-  font-family: Sumana, serif;
+  font-family: Laila, serif;
   font-size: 18px;
   line-height: 1.4;
   margin-bottom: 0.7em;
@@ -310,7 +310,7 @@ article .title {
 }
 
 .callout p {
-  font-family: Sumana, serif;
+  font-family: Laila, serif;
   margin: 0;
 }
 
@@ -454,5 +454,5 @@ table th {
 table td {
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
-  font-family: Sumana, serif;
+  font-family: Laila, serif;
 }
