@@ -192,4 +192,60 @@
   src: url('../fonts/Mukta-ExtraBold.ttf') format('truetype');
 }
 
+/* Laila font family - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Laila';
+  font-style: normal;
+  font-weight: 300; /* Light */
+  src: url('../fonts/Laila-Light.ttf') format('truetype');
+}
 
+@font-face {
+  font-display: swap;
+  font-family: 'Laila';
+  font-style: normal;
+  font-weight: 400; /* Regular */
+  src: url('../fonts/Laila-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Laila';
+  font-style: normal;
+  font-weight: 500; /* Medium */
+  src: url('../fonts/Laila-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Laila';
+  font-style: normal;
+  font-weight: 600; /* SemiBold */
+  src: url('../fonts/Laila-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Laila';
+  font-style: normal;
+  font-weight: 700; /* Bold */
+  src: url('../fonts/Laila-Bold.ttf') format('truetype');
+}
+
+/* Sumana font family - latin */
+@font-face {
+  font-display: swap;
+  font-family: 'Sumana';
+  font-style: normal;
+  font-weight: 400; /* Regular */
+  src: url('../fonts/Sumana-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Sumana';
+  font-style: normal;
+  font-weight: 700; /* Bold */
+  src: url('../fonts/Sumana-Bold.ttf') format('truetype');
+}

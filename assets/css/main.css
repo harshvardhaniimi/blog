@@ -9,32 +9,37 @@ html, body {
 body {
   position: relative;
   background-image: url('/djnavarro.jpg'); /* Path to your image */
-  background-size: cover; /* Ensures the image covers the whole background */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  background-attachment: fixed; /* Makes the background image stay fixed when scrolling */
-  background-position: center; /* Centers the background image */
-  background-color: #f5f5f3b5; /* Fallback background color (old paper-like color) */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-color: #f5f5f3b5;
 }
 
 body::before {
   content: '';
-  position: fixed; /* Use fixed positioning to cover the entire viewport */
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.9); /* White overlay with % opacity */
-  z-index: 1; /* Ensure the overlay is on top of the background image */
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 1;
 }
 
 /* Ensure the rest of your content is above the overlay */
 .content {
   position: relative;
   z-index: 2;
+  margin-bottom: 4em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+  padding: 0 1ch;
+  word-wrap: break-word;
 }
 
-
-/* Markdown */
+/* Color Variables */
 :root{
   --maincolor: #FF9933; /* Saffron */
   --bordercl: #000080; /* Dark Blue */
@@ -42,16 +47,21 @@ body::before {
   --hovercolor: #138808; /* Dark Green */
   --darkMaincolor: #50fa7b;
 }
+
+/* Basic HTML Elements */
 html {
   color: #232333;
-  font-family: 'Fira Sans', monospace;
   font-size: 15px;
   line-height: 1.6em;
 }
-body{
+
+body {
   display: block;
   margin: 8px;
+  font-family: Sumana, serif;
+  font-weight: 400;
 }
+
 * {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -61,46 +71,79 @@ body{
   color: var(--bordercl);
 }
 
+/* Typography */
 p {
-  font-family: 'Sedan', sans-serif;
+  font-family: Sumana, serif;
   line-height: 1.5;
   font-size: 18px;
 }
 
+/* Headers */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Laila', serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+h4, h5, h6 {
+  font-weight: 700;
+}
+
+h1::before { color: var(--maincolor); content: '# '; }
+h2::before { color: var(--maincolor); content: '## '; }
+h3::before { color: var(--maincolor); content: '### '; }
+h4::before { color: var(--maincolor); content: '#### '; }
+h5::before { color: var(--maincolor); content: '##### '; }
+h6::before { color: var(--maincolor); content: '###### '; }
+
+/* Horizontal Rule */
 hr {
   border: 0;
   border-top: 3px dotted var(--bordercl);
   margin: 1em 0;
 }
 
-
+/* Blockquotes */
 blockquote {
   border-left: 3px solid var(--bordercl);
-  color: #333333; /* Darker color instead of #737373 */
+  color: #333333;
   margin: 1.5em 0;
   padding: 1em 1.5em;
   background: rgba(0,0,0,0.03);
   border-radius: 0 5px 5px 0;
-  font-family: 'IBM Plex Mono', sans-serif; /* Sans-serif font */
+  font-family: Sumana, serif;
   font-style: italic;
 }
 
-/* More interesting links */
+/* Links */
 a {
   text-decoration: underline;
   text-decoration-color: var(--maincolor);
-  text-decoration-thickness: 3px; /* Customize thickness */
-  text-underline-offset: 5px; /* Control the gap */
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
   color: inherit;
   transition: all 0.3s ease;
 }
 
 a:hover {
-    background-color: var(--hovercolor);
-    color: #fff;
+  background-color: var(--hovercolor);
+  color: #fff;
 }
 
-/* Updated Unordered lists */
+/* Lists */
 ul {
   list-style: none;
   padding-left: 1.5em;
@@ -110,8 +153,8 @@ ul li {
   position: relative;
   padding-left: 1.5em;
   margin-bottom: 0.7em;
-  font-family: 'Sedan', sans-serif;
-  font-size: 18px; /* Match paragraph font size */
+  font-family: Sumana, serif;
+  font-size: 18px;
   text-indent: 0;
   line-height: 1.4;
 }
@@ -124,27 +167,21 @@ ul > li::before {
   width: 0.6em;
   height: 0.6em;
   background: var(--maincolor);
-  transform: rotate(45deg); /* This creates a diamond shape */
-  /* Alternative: clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+  transform: rotate(45deg);
 }
 
-/* Updated Ordered lists */
 ol {
   padding-left: 1.5em;
+  list-style-type: decimal;
 }
 
 ol li {
-  font-family: 'Sedan', sans-serif;
-  font-size: 18px; /* Match paragraph font size */
+  font-family: Sumana, serif;
+  font-size: 18px;
   line-height: 1.4;
   margin-bottom: 0.7em;
   padding-left: 0.5em;
 }
-
-ol {
-  list-style-type: decimal; /* Standard decimal numbering */
-}
-
 
 /* Images */
 img {
@@ -175,14 +212,16 @@ figure h4 {
   margin: 0;
   margin-bottom: 1em;
 }
+
 figure h4::before {
   content: '↳ ';
 }
 
-/* Code blocks */
+/* Code */
 code {
   background-color: #f1f1f1;
   padding: .1em .2em;
+  font-family: 'Roboto Mono', monospace;
 }
 
 pre {
@@ -190,6 +229,7 @@ pre {
   line-height: 1.4;
   overflow-x: auto;
   padding: 1em;
+  font-family: 'Roboto Mono', monospace;
 }
 
 .highlight pre ::selection {
@@ -204,17 +244,7 @@ pre code {
   padding: 0;
 }
 
-/* Containers */
-.content {
-  margin-bottom: 4em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 800px;
-  padding: 0 1ch;
-  word-wrap: break-word;
-}
-
-/* Header */
+/* Header Section */
 header {
   display: flex;
   flex-wrap: wrap;
@@ -225,55 +255,9 @@ header {
 
 header .main {
   font-size: 1.7rem;
-}
-
-/* Headers with Mukta */
-h1 {
-  font-family: 'Mukta', 'Bad Script', sans-serif;
+  font-family: 'Laila', serif;
   font-weight: 700;
-  font-size: 2.2rem;
 }
-
-h2 {
-  font-family: 'Mukta', 'Ubuntu', sans-serif;
-  font-weight: 600;
-  font-size: 1.8rem;
-}
-
-h3 {
-  font-family: 'Mukta', 'Ubuntu', sans-serif;
-  font-weight: 600;
-  font-size: 1.5rem;
-}
-
-h4, h5, h6 {
-  font-family: 'Mukta', 'Ubuntu', sans-serif;
-  font-weight: 500;
-}
-
-/* Body text with Karma */
-body, p {
-  font-family: 'Karma', 'Sedan', serif;
-  font-weight: 500;
-}
-
-/* Lists */
-ul li, ol li {
-  font-family: 'Karma', 'Sedan', serif;
-  font-size: 18px;
-}
-
-/* Code and monospace elements */
-code, pre {
-  font-family: 'Roboto Mono', monospace;
-}
-
-h1::before { color: var(--maincolor); content: '# '; }
-h2::before { color: var(--maincolor); content: '## '; }
-h3::before { color: var(--maincolor); content: '### '; }
-h4::before { color: var(--maincolor); content: '#### '; }
-h5::before { color: var(--maincolor); content: '##### '; }
-h6::before { color: var(--maincolor); content: '###### '; }
 
 .meta {
   color: #999;
@@ -288,21 +272,24 @@ footer {
   padding: 2rem 0rem;
   margin-top: 2rem;
 }
+
 .soc {
   display: flex;
   align-items: center;
   border-bottom: none;
 }
+
 .border {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   border: 1px solid;
 }
+
 .footer-info {
   padding: var(--footer-padding);
 }
 
-/* Common */
+/* Posts */
 .title h1 {
   margin-bottom: 0;
 }
@@ -311,11 +298,9 @@ time {
   color: grey;
 }
 
-/* Posts */
 article .title {
   margin-bottom: 1em;
 }
-
 
 /* Callout */
 .callout {
@@ -325,7 +310,7 @@ article .title {
 }
 
 .callout p {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: Sumana, serif;
   margin: 0;
 }
 
@@ -338,41 +323,52 @@ article .title {
   color: var(--callouctcolor);
 }
 
+/* Site Description and Tags */
 .site-description {
-display: flex;
-justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
-.tags li::before{
+
+.tags li::before {
   content: "🏷 ";
 }
-.tags a{
-  border-bottom: 3px solid var(--maincolor); 
+
+.tags a {
+  border-bottom: 3px solid var(--maincolor);
 }
-.tags a:hover{
-  color:white;
-  background-color: var(--hovercolor); 
+
+.tags a:hover {
+  color: white;
+  background-color: var(--hovercolor);
 }
-svg{
+
+svg {
   max-height: 15px;
 }
-.soc:hover{
+
+.soc:hover {
   color: white;
 }
-.draft-label{ 
-    color: var(--bordercl);
-    text-decoration: none;
-    padding: 2px 4px;
-    border-radius: 4px;
-    margin-left: 6px;
-    background-color: #f9f2f4;
+
+.draft-label {
+  color: var(--bordercl);
+  text-decoration: none;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin-left: 6px;
+  background-color: #f9f2f4;
 }
+
+/* Code Highlighting */
 .highlight {
   position: relative;
   -webkit-overflow-scrolling: touch;
 }
+
 .highlight pre code[class*="language-"] {
   -webkit-overflow-scrolling: touch;
 }
+
 .highlight pre code[class*="language-"]::before {
   background: black;
   border-radius: 0 0 0.25rem 0.25rem;
@@ -389,64 +385,74 @@ svg{
 
 .highlight pre code[class=language-javaScript]::before,
 .highlight pre code[class="language-js"]::before {
-content: "js";
-background: #f7df1e;
-color: black;
+  content: "js";
+  background: #f7df1e;
+  color: black;
 }
+
 .highlight pre code[class*='language-yml']::before,
 .highlight pre code[class*='language-yaml']::before {
-content: 'yaml';
-background: #f71e6a;
-color: white;
+  content: 'yaml';
+  background: #f71e6a;
+  color: white;
 }
+
 .highlight pre code[class*='language-shell']::before,
 .highlight pre code[class*='language-bash']::before,
 .highlight pre code[class*='language-sh']::before {
-content: 'shell';
-background: green;
-color:white
-}
-.highlight pre code[class*='language-json']::before{
-content: 'json';
-background: dodgerblue;
- color: #000000 
-}
-.highlight pre code[class*='language-python']::before,
-.highlight pre code[class*='language-py']::before {
-content: 'py';
-background: blue;
-color: yellow ;
-}
-.highlight pre code[class*='language-css']::before{
-content: 'css';
-background: cyan;
-color: black ;
-}
-.highlight pre code[class*='language-go']::before{
-content: 'Go';
-background: cyan;
-color: royalblue ;
-}
-.highlight pre code[class*='language-md']::before,
-.highlight pre code[class*='language-md']::before{
-content: 'Markdown';
-background: royalblue;
-color: whitesmoke ;
+  content: 'shell';
+  background: green;
+  color: white;
 }
 
-/* table */
+.highlight pre code[class*='language-json']::before {
+  content: 'json';
+  background: dodgerblue;
+  color: #000000;
+}
+
+.highlight pre code[class*='language-python']::before,
+.highlight pre code[class*='language-py']::before {
+  content: 'py';
+  background: blue;
+  color: yellow;
+}
+
+.highlight pre code[class*='language-css']::before {
+  content: 'css';
+  background: cyan;
+  color: black;
+}
+
+.highlight pre code[class*='language-go']::before {
+  content: 'Go';
+  background: cyan;
+  color: royalblue;
+}
+
+.highlight pre code[class*='language-md']::before,
+.highlight pre code[class*='language-md']::before {
+  content: 'Markdown';
+  background: royalblue;
+  color: whitesmoke;
+}
+
+/* Table */
 table {
   border-spacing: 0;
   border-collapse: collapse;
 }
 
-table th{
+table th {
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
   font-size: large;
+  font-family: 'Laila', serif;
+  font-weight: 700;
 }
 
-table td{
+table td {
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
+  font-family: Sumana, serif;
 }
