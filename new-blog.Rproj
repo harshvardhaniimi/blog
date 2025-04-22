@@ -1,4 +1,5 @@
 Version: 1.0
+ProjectId: b1450539-bebd-4630-990f-967840036165
 
 RestoreWorkspace: Default
 SaveWorkspace: Default
@@ -16,5 +17,4 @@ AutoAppendNewline: Yes
 
 BuildType: Website
 
-MarkdownWrap: Column
-MarkdownWrapAtColumn: 72
+MarkdownWrap: Sentence
