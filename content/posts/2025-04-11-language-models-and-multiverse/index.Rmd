@@ -1,0 +1,91 @@
+---
+title: Language Models and Multiverse
+author: Harshvardhan
+date: '2025-04-11'
+slug: language-models-and-multiverse
+categories:
+  - blog
+  - thoughts
+tags: []
+draft: yes
+---
+
+I was listening to a podcast by OpenAI where they tell us how they trained GPT-4.5, one of the largest models they have today.
+GPT-4.5 shows intelligence in unexpected ways, demonstrating common sense like other models totally miss.
+I haven't used it much myself so cannot comment on that, but at [38:38](https://youtu.be/6nJZopACRuQ?t=2318) in the video, Sam Altman asks Daniel Selsam "why does supervised learning work?".
+Without skipping a beat, he replies "compression".
+Then he explains that "the ideal intelligence is Solomonoff Induction".
+Unfamiliar with this term, I jumped on a conversation with GPT-4.5 and along the way, I learnt several interesting things that I want to share with you all.
+
+## Solomonoff Induction
+
+Imagine that you are given the following set of numbers and you have to predict the next one:
+
+> 2, 4, 6, 8, \_\_\_
+
+Did you guess 10?
+Why?
+Probably because that's the simplest patten --- "add two each time".
+But consider this alternative explanation --- "Add two every time until you reach 8, then suddenly switch to adding five".
+Then, the next number would be 13.
+
+Both explanations match the observed data.
+Yet, intuitively, you'd bet on 10 because it's simpler.
+**But why exactly does simplicity feel right?**
+
+Simplicity feels right because of Occam's Razor: "Among competing hypotheses, choose the simplest one".
+
+Then, in 1960s, Ray Solomonoff had a brilliant idea.
+He decided to represent each possible explanation (or hypothesis) as a computer program.
+The shorter the program length (in bits or complexity), the simpler the hypothesis.
+
+For example, there are several computer programs to decide the next number in our series `2, 4, 6, 8, ___`:
+
+| Program                                                            | Length (in bits) | Interpretation                              |
+|----------------------------------|------------------|---------------------|
+| Print all even numbers                                             | Short            | Simple, general                             |
+| Print 2, 4, 6, 8, then print 13, 18, ... (add 5 to last number)    | Medium           | Complicated, special-case explanation       |
+| Print numbers 2, 4, 6, 8, followed by random unpredictable numbers | Very Long        | Highly complex, arbitrary, no clear pattern |
+
+The shortest program often has the simplest interpretation.
+Supervised learning algorithms are attempts to compress all available information in data useful for decision making into simple binary.
+Solomonoff said that to predict the next event, we should:
+
+1.  Consider every possible program that could produce the observed data.
+2.  Assign probabilities based on simplicity:
+    1.  Shorter program → Higher probability
+    2.  Longer program → Lower probability
+    3.  $\text{Probability} \propto 2^{-\text{program length}}$
+3.  Predict the next event by taking a weighted average of the predictions from **all programs**.
+
+In other words, we can imagine an infinite "multiverse" of programs generating your data.
+We don't just pick one; we average over them all, weighing each according to simplicity.
+
+Even though practically it is impossible to use, it guides us to understand that simpler algorithms that compress data better are almost always better representations of data.
+
+## Multiverse?
+
+Now, while exploring Solomonoff induction, I stumbled upon its intriguing connection with another concept: the multiverse.
+Physicist Max Tegmark proposed four fascinating levels of multiverse, each level capturing a different kind of parallel universe.
+
+The first level Tegmark describes includes regions beyond our observable cosmic horizon.
+Essentially, these universes are extensions of our own, governed by the same physical laws but possibly differing in their initial conditions.
+
+The second level imagines universes arising from something called eternal inflation (recall that because of cosmic inflation our universe is constantly expanding), each potentially having different physical constants and laws of nature.
+Solomonoff induction would, in theory, incorporate these universes too, evaluating them based on how simple and computable their fundamental rules are.
+Shorter, simpler descriptions (or programs) of universes would be considered more probable than complicated, special-case scenarios.
+
+The third level relates directly to quantum mechanics, specifically the many-worlds interpretation.
+Here, every quantum event creates branching universes, each representing different outcomes.
+This concept resonates strongly with Solomonoff induction\'s approach, where each potential future event is considered simultaneously, weighted by simplicity and computability.
+Each "branch" is akin to a different program output, contributing to the overall prediction.
+
+Finally, Tegmark's fourth level---the "ultimate ensemble"---is the broadest and most abstract.
+It suggests that every mathematically consistent universe that can exist does exist.
+This level again matches perfectly with Solomonoff induction.
+Since Solomonoff induction evaluates every conceivable computable hypothesis, it inherently encompasses this idea, assigning probabilities to these universes based purely on the elegance and simplicity of their mathematical description.
+
+## But is Multiverse Real?
+
+We don't know.
+But as a fan of "Everything Everywhere All at Once", I would totally say "Yes!".
