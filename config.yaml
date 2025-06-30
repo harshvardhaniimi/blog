@@ -52,6 +52,8 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    extensions:
+      math: true
 
 enableRobotsTXT: true
 
