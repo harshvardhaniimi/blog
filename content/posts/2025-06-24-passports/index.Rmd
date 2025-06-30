@@ -115,7 +115,7 @@ To answer the question, I calculate a "Travel Easy Index", which is simply the c
 Data is sourced from the [Passport Index](https://www.passportindex.org/byIndividualRank.php) website and World Bank for GDP Per Capita (PPP).[^2]
 [^3]
 
-[^2]: Complete data is available on my Github at
+[^2]: Complete data is available on my Github at <https://github.com/harshvardhaniimi/blog/blob/main/content/posts/2025-06-24-passports/passport_plot_data.csv>
 
 [^3]: Everywhere in this post, I've used GDP per capita with purchasing power parity (PPP), sourced from the World Bank for the year 2023 in current international dollars.
     See <https://data.worldbank.org/indicator/NY.GDP.PCAP.PP.CD>
