@@ -28,10 +28,6 @@ params:
     - icon: rss
       name: RSS
       url: /index.xml
-  subtitle: |
-    PhD Candidate in Business Analytics at University of Tennessee, Knoxville
-    
-    I usually pen down my thoughts here drawing heavily from anecdotes and personal experiences.
   useCDN: no
 menu:
   main:
