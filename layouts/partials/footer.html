@@ -1,0 +1,24 @@
+<footer>
+  <div style="display:flex">
+    {{- range $index, $key := .Site.Params.Social -}}
+    <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}">
+      {{- if eq $key.icon "threads" -}}
+        <img src="https://cdn.simpleicons.org/threads/currentColor" alt="Threads" style="width:18px;height:18px;vertical-align:middle;" />
+      {{- else -}}
+        <i data-feather="{{ $key.icon }}"></i>
+      {{- end -}}
+    </a>
+    <a class="border"></a>
+    {{- end -}}
+  </div>
+  <div class="footer-info">
+    {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }} | {{ end }}
+    Built with <a href="https://github.com/athul/archie">Hugo Archie</a>
+  </div>
+</footer>
+
+{{- if (isset .Site.Params "social") -}}
+<script>
+  feather.replace()
+</script>
+{{- end -}}

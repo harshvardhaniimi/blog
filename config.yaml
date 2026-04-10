@@ -11,7 +11,21 @@ ignoreErrors: ["error-missing-instagram-accesstoken"]
 permalinks: 
   posts: "/:slug/"
 params:
-  mode: "light"
+  mode: "toggle"
+  # Giscus (GitHub Discussions) — fill in after running the wizard at https://giscus.app
+  # Leave any field blank to disable comments site-wide.
+  giscus:
+    repo: ""            # e.g. "harshvardhaniimi/blog-comments"
+    repoId: ""          # from giscus wizard
+    category: "General"
+    categoryId: ""      # from giscus wizard
+    mapping: "pathname"
+    theme: "preferred_color_scheme"
+  # MailerLite embedded form — paste the <div data-form> id from your MailerLite embed snippet.
+  # Leave blank to hide the signup block.
+  mailerlite:
+    accountId: ""       # e.g. "1234567"
+    formId: ""          # e.g. "abcdef"
   social:
     - icon: linkedin
       name: LinkedIn
@@ -22,6 +36,9 @@ params:
     - icon: twitter
       name: Twitter
       url: https://twitter.com/harshbutjust
+    - icon: threads
+      name: Threads
+      url: https://www.threads.net/@harsh17.in
     - icon: instagram
       name: Instagram
       url: https://www.instagram.com/harsh17/

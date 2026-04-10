@@ -49,7 +49,8 @@ USDA made a marketing division to work with fast food companies (among others) t
 
 But how much can you plaster a pizza with cheese? It’s already dipping. When they couldn’t find more places to put cheese, the US government invented the cheese-filled crust.[^7]
 
-{{% tweet "1528823098929053696" %}}
+<blockquote class="twitter-tweet"><a href="https://twitter.com/i/web/status/1528823098929053696">View tweet on Twitter</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 Today, unlike other corners of fast food industry, pizza isn’t considered as unhealthy when it actually is. In fact, the US government spends millions to get people to eat more pizza.[^8]
 
