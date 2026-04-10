@@ -1,2 +1,3 @@
-# Redirect all blog traffic to the unified site
-/*    https://harsh17.in/:splat    301!
+# Redirect only the custom domain to the unified site
+# The Netlify subdomain (hvblog.netlify.app) stays accessible as an archive
+https://blog.harsh17.in/*    https://harsh17.in/:splat    301!
